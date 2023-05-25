@@ -67,10 +67,8 @@ public class PlayerController : MonoBehaviour
         if (playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && !isJumping)
         {
             isJumping = true;
-            Debug.Log("zuerst: "+r.velocity);
             r.velocity = Vector3.up * jumpStrength;
         }
-        Debug.Log("danach: " + r.velocity);
         if (r.velocity.y == 0.0f)
         {
             isJumping = false;
