@@ -21,7 +21,6 @@ public class SunsetManager : MonoBehaviour
             TimeOfDay += Time.deltaTime;
             TimeOfDay %= 20;
             UpdateLighting(TimeOfDay / 20f);
-
         }
         else
         {
