@@ -33,7 +33,7 @@ public class TimerScript : MonoBehaviour
         {
             if (TimeLeft > 0 && TimeLeft < 1200)
             {
-                TimeLeft += Time.deltaTime;
+                TimeLeft += Time.deltaTime*0.15f;
                 updateTimer(TimeLeft);
             }
             else
