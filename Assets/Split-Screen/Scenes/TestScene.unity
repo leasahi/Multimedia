@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04546769, g: 0.036745343, b: 0.021519296, a: 1}
+  m_IndirectSpecularColor: {r: 0.04546748, g: 0.03674523, b: 0.021519298, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -864,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a8ac3643c97b00b41a86a2cd8b87abd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.331
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a8ac3643c97b00b41a86a2cd8b87abd4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2545,7 +2545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00b07d8b0d34d4992b517ef4213c8f31, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.209
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 00b07d8b0d34d4992b517ef4213c8f31, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5391,7 +5391,7 @@ GameObject:
   - component: {fileID: 1159009619}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11787,7 +11787,12 @@ CapsuleCollider:
   m_Height: 0.03649044
   m_Direction: 1
   m_Center: {x: 0, y: -0.001251094, z: -0.00000015180558}
---- !u!114 &1651824295
+--- !u!4 &1651824298 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 00b07d8b0d34d4992b517ef4213c8f31, type: 3}
+  m_PrefabInstance: {fileID: 532970581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1651824299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11799,12 +11804,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed820bd3bdeff434f857c9b72b4483d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 3000
---- !u!4 &1651824298 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 00b07d8b0d34d4992b517ef4213c8f31, type: 3}
-  m_PrefabInstance: {fileID: 532970581}
-  m_PrefabAsset: {fileID: 0}
+  isCollided1: 0
+  isCollided2: 0
+  player1: {fileID: 2004150775}
+  player2: {fileID: 1159009618}
 --- !u!1 &1658155156
 GameObject:
   m_ObjectHideFlags: 0
@@ -13061,7 +13064,7 @@ GameObject:
   - component: {fileID: 2004150777}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
