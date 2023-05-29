@@ -26,6 +26,11 @@ public class LogicScript : MonoBehaviour
         scoreText.text = friendCounter.ToString();
     }
 
+    public int getScore()
+    {
+        return friendCounter;
+    }
+
     public void restartGame()
     {
        

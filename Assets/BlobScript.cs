@@ -5,8 +5,8 @@ using UnityEngine;
 public class BlobScript : MonoBehaviour
 {
     public LogicScript logic;
-    bool collided = false;
-    bool invited = false;
+    public bool collided = false;
+    public bool invited = false;
 
 
     // Start is called before the first frame update
@@ -36,5 +36,10 @@ public class BlobScript : MonoBehaviour
     {
         collided = false;
     }
-    
+
+    public int getScore()
+    {
+        return logic.getScore();
+    }
+
 }
