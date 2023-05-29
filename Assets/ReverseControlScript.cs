@@ -14,6 +14,8 @@ public class ReverseControlScript : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
+    public GameObject sphere;
+
     public PlayerControllerScript pC1WASD;
     public PlayerControllerScript pC2Arrows;
 
@@ -31,6 +33,7 @@ public class ReverseControlScript : MonoBehaviour
         {
             pC1WASD.reversedWASD = true;
             StartCoroutine(Waiter());
+            sphere.SetActive(false);
 
         }
 
@@ -38,6 +41,7 @@ public class ReverseControlScript : MonoBehaviour
         {
             pC2Arrows.reversedArrows = true;
             StartCoroutine(Waiter());
+            sphere.SetActive(false);
         }
 
     }

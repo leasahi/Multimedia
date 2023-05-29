@@ -15,12 +15,12 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.5865264, g: 0.41411942, b: 0.18806806, a: 1}
+  m_FogColor: {r: 0.61024547, g: 0.22227143, b: 0.06646236, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.66926885, g: 0.35299826, b: 0.7619194, a: 1}
+  m_AmbientSkyColor: {r: 0.9992559, g: 0.64865965, b: 0.68654776, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04546748, g: 0.03674523, b: 0.021519298, a: 1}
+  m_IndirectSpecularColor: {r: 0.18373704, g: 0.22913553, b: 0.30465963, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1615,7 +1615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 1673536377}
   Preset: {fileID: 11400000, guid: 4d00b170a61434ab08a01c4d45b39ab4, type: 2}
-  TimeOfDay: 15.4
+  TimeOfDay: 6.8
 --- !u!1 &251546197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6286,7 +6286,7 @@ GameObject:
   - component: {fileID: 1217004729}
   - component: {fileID: 1217004728}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Item1RC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6309,6 +6309,7 @@ MonoBehaviour:
   isCollided2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
+  sphere: {fileID: 1217004727}
   pC1WASD: {fileID: 2004150779}
   pC2Arrows: {fileID: 1159009621}
 --- !u!135 &1217004729
@@ -11904,7 +11905,7 @@ GameObject:
   - component: {fileID: 1487377346}
   - component: {fileID: 1487377345}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Item2RC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11927,6 +11928,7 @@ MonoBehaviour:
   isCollided2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
+  sphere: {fileID: 1487377344}
   pC1WASD: {fileID: 2004150779}
   pC2Arrows: {fileID: 1159009621}
 --- !u!135 &1487377346
@@ -12989,7 +12991,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.49182796, g: 0.49182796, b: 0.49182796, a: 1}
+  m_Color: {r: 0.6386695, g: 0.6386695, b: 0.6386695, a: 1}
   m_Intensity: 1.34
   m_Range: 10
   m_SpotAngle: 30
@@ -13047,7 +13049,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673536376}
-  m_LocalRotation: {x: 0.08698382, y: 0.062551536, z: 0.99422896, w: -0.005472554}
+  m_LocalRotation: {x: 0.024315696, y: -0.95663947, z: 0.27792948, w: 0.083695166}
   m_LocalPosition: {x: -2.2, y: 6.7, z: 3.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
