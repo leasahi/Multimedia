@@ -98,7 +98,7 @@ public class PlayerControllerScript : MonoBehaviour
         // jump
         if (playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && !isJumping)
         {
-            isJumping = true;
+            //isJumping = true;
             r.velocity = Vector3.up * jumpStrength;
         }
         if (r.velocity.y == 0.0f)
