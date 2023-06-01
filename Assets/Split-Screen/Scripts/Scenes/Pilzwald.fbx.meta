@@ -3,7 +3,72 @@ guid: ee16cdd53c7014082b21bfc780efb3c0
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilz1
+    second: {fileID: 2100000, guid: 32ec4ce07d8b54480a9b34acae6746cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilz2
+    second: {fileID: 2100000, guid: 682b4e78b8ffc4d9bb6e14e508b7559d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilz3
+    second: {fileID: 2100000, guid: cc110f48a73d44a94a0da6bc5a21575d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzStamm1
+    second: {fileID: 2100000, guid: c9e79a0bf26c34092b8a0a02845df712, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzStamm2
+    second: {fileID: 2100000, guid: 5bf962da7e4764d1d8fd0fa23c19d919, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzStamm3
+    second: {fileID: 2100000, guid: 6f3f767ecb71041dcab4fe008bbbd3c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzstamm5
+    second: {fileID: 2100000, guid: db1d59ab2201e4933b234a629c5832d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzstamm6
+    second: {fileID: 2100000, guid: 198ebd875c3704c23aac449b8b019af7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPortals
+    second: {fileID: 2100000, guid: 92f17f52e232440788980ab6ccd04c77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandard2
+    second: {fileID: 2100000, guid: 9828459c08c844337b34ccdb463587be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 9ee4862f1eba940a88511fad11438b4d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Layer_lambert2_Diffuse_Paint Layer 1
+    second: {fileID: 2800000, guid: 2878ef4c75be04a3b9b9d969487e6294, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sahiner_Pilz2
+    second: {fileID: 2800000, guid: 98c37be07c34143089dcd8c5e702e09c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
