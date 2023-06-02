@@ -22,6 +22,11 @@ public class CollisionScript : MonoBehaviour
     public GameObject home1;
     public GameObject home2;
 
+    public LogicScript logic;
+
+    public Transform p1;
+    public Transform p2;
+
 
 
     Vector3 temp = new Vector3(7.0f, 0, 0);
@@ -44,6 +49,7 @@ public class CollisionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (isCollided1 && bS.invited)
         {
             //player.transform.SetParent(this.transform);
@@ -56,6 +62,8 @@ public class CollisionScript : MonoBehaviour
             this.transform.position = player1.transform.position;
             //not yet correct, trying to figure out the maths
             this.transform.position -= player1.transform.forward * (distance * friend1.friends1);
+            this.transform.LookAt(p1);
+
 
         }
         else if (isCollided2 && bS.invited)
@@ -69,6 +77,8 @@ public class CollisionScript : MonoBehaviour
             //Vector3 bar = player2.transform.position;
             this.transform.position = player2.transform.position;
             this.transform.position -= player2.transform.forward * (distance * friend2.friends2);
+            this.transform.LookAt(p2);
+
 
         }
 
@@ -101,11 +111,15 @@ public class CollisionScript : MonoBehaviour
             isCollided1 = false;
 
             currentBlob.SetActive(false);
+            isHome1 = true;
+            logic.addScore();
         }
 
         if (isCollided2 && collision == home2.GetComponent<Collider>())
         {
+            isCollided2 = false;
             currentBlob.SetActive(false);
+            isHome2 = true;
         }
 
     }

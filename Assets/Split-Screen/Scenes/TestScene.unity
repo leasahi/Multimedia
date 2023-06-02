@@ -929,8 +929,11 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 90935289}
-  home1: {fileID: 0}
-  home2: {fileID: 0}
+  home1: {fileID: 1653619083}
+  home2: {fileID: 54746296}
+  logic: {fileID: 250385955}
+  p1: {fileID: 2004150776}
+  p2: {fileID: 1159009622}
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -1422,8 +1425,11 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 173539319}
-  home1: {fileID: 0}
-  home2: {fileID: 0}
+  home1: {fileID: 1653619083}
+  home2: {fileID: 54746296}
+  logic: {fileID: 250385955}
+  p1: {fileID: 2004150776}
+  p2: {fileID: 0}
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -6726,7 +6732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &735241689
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -13598,6 +13604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 986370320}
   - component: {fileID: 986370319}
+  - component: {fileID: 986370321}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -13663,6 +13670,14 @@ Transform:
   m_Father: {fileID: 2004150776}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 25.305, y: 0, z: 0}
+--- !u!81 &986370321
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986370317}
+  m_Enabled: 1
 --- !u!1 &989596005
 GameObject:
   m_ObjectHideFlags: 0
@@ -16780,6 +16795,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: -5779199810719060837, guid: 4cc1a68194c4a489ebe0befc060aea0e, type: 3}
+      propertyPath: m_Name
+      value: Pilzhaus2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5779199810719060837, guid: 4cc1a68194c4a489ebe0befc060aea0e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17435,7 +17454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1431178000
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -24153,8 +24172,11 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1651824288}
-  home1: {fileID: 0}
-  home2: {fileID: 0}
+  home1: {fileID: 1653619083}
+  home2: {fileID: 54746296}
+  logic: {fileID: 250385955}
+  p1: {fileID: 2004150776}
+  p2: {fileID: 1159009622}
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -24404,7 +24426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1673536377
 Light:
   m_ObjectHideFlags: 0
@@ -25771,7 +25793,7 @@ LightingSettings:
   serializedVersion: 4
   m_GIWorkflowMode: 0
   m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 0
+  m_EnableRealtimeLightmaps: 1
   m_RealtimeEnvironmentLighting: 1
   m_BounceScale: 1
   m_AlbedoBoost: 1
@@ -26866,8 +26888,11 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1976223307}
-  home1: {fileID: 0}
-  home2: {fileID: 0}
+  home1: {fileID: 1653619083}
+  home2: {fileID: 54746296}
+  logic: {fileID: 250385955}
+  p1: {fileID: 2004150776}
+  p2: {fileID: 1159009622}
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0

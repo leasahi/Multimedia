@@ -21,7 +21,7 @@ public class BlobScript : MonoBehaviour
         if (!invited && collided && Input.GetKey(KeyCode.X))
         {
             invited = true;
-            logic.addScore();
+           // logic.addScore();
         }
        
     }
