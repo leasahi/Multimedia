@@ -17,6 +17,13 @@ public class CollisionScript : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
+    public GameObject currentBlob;
+
+    public GameObject home1;
+    public GameObject home2;
+
+
+
     Vector3 temp = new Vector3(7.0f, 0, 0);
     float distance = 0.75f;
 
@@ -81,6 +88,24 @@ public class CollisionScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player2"))
         {
             isCollided2 = true;
+        }
+
+        
+
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (isCollided1 && collision == home1.GetComponent<Collider>())
+        {
+            isCollided1 = false;
+
+            currentBlob.SetActive(false);
+        }
+
+        if (isCollided2 && collision == home2.GetComponent<Collider>())
+        {
+            currentBlob.SetActive(false);
         }
 
     }
