@@ -3,7 +3,12 @@ guid: 7cdbc31c76d7d4cc5b1dc1a68d5d7f97
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiHuegel1
+    second: {fileID: 2100000, guid: 1f9ba75ef63e049c9bd979d325b5bc1d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
