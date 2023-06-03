@@ -34,7 +34,7 @@ public class BlobItemScript : MonoBehaviour
             if (blobs.allBlobsNew.Count > 0)
             {
                 blobs.NewBlob(0, blobPosition);
-                sphere.SetActive(false);
+                
             }
             sphere.SetActive(false);
             isCollided1 = false;
@@ -47,7 +47,7 @@ public class BlobItemScript : MonoBehaviour
             if (blobs.allBlobsNew.Count > 0)
             {
                 blobs.NewBlob(0, blobPosition);
-                sphere.SetActive(false);
+                
             }
             sphere.SetActive(false);
             isCollided2 = false;
@@ -61,12 +61,14 @@ public class BlobItemScript : MonoBehaviour
         if (collision == player1.GetComponent<Collider>())
         {
             isCollided1 = true;
+            
 
         }
 
         if (collision == player2.GetComponent<Collider>())
         {
             isCollided2 = true;
+            
 
         }
         Debug.Log("im trigger methode: " + isCollided1);

@@ -9,7 +9,10 @@ public class AllItemsScript : MonoBehaviour
     public Vector3[] positions;
 
     public List<GameObject> allItems;
-    public Quaternion q;
+    public GameObject item1;
+    public GameObject item2;
+    public GameObject item3;
+    
    
     public LogicScript logic;
     public int itemCounter;
@@ -19,22 +22,18 @@ public class AllItemsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        int randomPosition = Random.Range(0, positions.Length - 1);
-        int randomItem = Random.Range(0, allItems.Count - 1);
 
-        Debug.Log("Item Listenlänge: " + allItems.Count);
-        allItems[randomItem].transform.position = positions[randomPosition];
+        int randomPosition = Random.Range(0, 3);
+        item1.transform.position = positions[randomPosition];
+        item1.SetActive(true);
+        randomPosition = Random.Range(4, 8);
+        item2.transform.position = positions[randomPosition];
+        item2.SetActive(true);
+        randomPosition = Random.Range(9, positions.Length - 1);
+        item3.transform.position = positions[randomPosition];
+        item3.SetActive(true);
+
         //Instantiate(allItems[randomItem], positions[randomPosition], q);
-      
-        //allItems[randomItem].SetActive(true);
-        Debug.Log("aktuelles Item: " + allItems[randomItem]);
-        Debug.Log("aktuelle Position Item: " + positions[randomPosition]);
-        Debug.Log("aktuelle Rotation Item: " + q);
-
-        //allItems.Remove(allItems[randomItem]);
-
-
     }
 
     // Update is called once per frame
