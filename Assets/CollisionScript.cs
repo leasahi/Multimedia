@@ -36,6 +36,7 @@ public class CollisionScript : MonoBehaviour
     public FriendCountScript friend2;
 
     public bool counted = false;
+    public int collectedBlobs = 0;
 
 
     // Start is called before the first frame update
@@ -57,6 +58,7 @@ public class CollisionScript : MonoBehaviour
             {
                 friend1.friends1 += 1;
                 counted = true;
+                collectedBlobs += 1;
             }
             this.transform.SetParent(player1.transform);
             this.transform.position = player1.transform.position;
@@ -72,6 +74,7 @@ public class CollisionScript : MonoBehaviour
             {
                 //friend2.friends2 += 1;
                 counted = true;
+                collectedBlobs += 1;
             }
             this.transform.SetParent(player2.transform);
             //Vector3 bar = player2.transform.position;
@@ -113,6 +116,7 @@ public class CollisionScript : MonoBehaviour
             currentBlob.SetActive(false);
             isHome1 = true;
             logic.addScore();
+            collectedBlobs += 1;
         }
 
         if (isCollided2 && collision == home2.GetComponent<Collider>())
@@ -121,6 +125,7 @@ public class CollisionScript : MonoBehaviour
             currentBlob.SetActive(false);
             isHome2 = true;
             friend2.friends2 += 1;
+            collectedBlobs += 1;
         }
 
     }

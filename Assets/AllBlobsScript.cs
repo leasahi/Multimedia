@@ -11,13 +11,15 @@ public class AllBlobsScript : MonoBehaviour
     private List<GameObject> usedBlobs = new List<GameObject>();
     //private bool newBlob = true;
     public LogicScript logic;
-    private int oldFriendCounter = 0;
+    public FriendCountScript friend1;
+    public FriendCountScript friend2;
+    public int oldFriendCounter = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        oldFriendCounter = logic.friendCounter;
+        oldFriendCounter = friend1.friends1 + friend2.friends2;
 
         int randomBlob = Random.Range(0, allBlobs.Length);
         int randomPosition = Random.Range(0, positions.Length);
@@ -34,7 +36,7 @@ public class AllBlobsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (logic.friendCounter > oldFriendCounter)
+        if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
         {
 
             int randomBlob = Random.Range(0, allBlobs.Length);
@@ -48,7 +50,7 @@ public class AllBlobsScript : MonoBehaviour
                 usedBlobs.Add(allBlobs[randomBlob]);
 
                 Debug.Log("Blob position: " + allBlobs[randomBlob].transform.position);
-                oldFriendCounter = logic.friendCounter;
+                oldFriendCounter = friend1.friends1 + friend2.friends2;
             }
         }
     }

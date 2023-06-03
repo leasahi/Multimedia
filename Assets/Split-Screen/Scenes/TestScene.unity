@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04546748, g: 0.03674523, b: 0.021519298, a: 1}
+  m_IndirectSpecularColor: {r: 0.17373973, g: 0.2172195, b: 0.29935384, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -970,6 +970,7 @@ MonoBehaviour:
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
+  collectedBlobs: 0
 --- !u!114 &90935291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1487,6 +1488,7 @@ MonoBehaviour:
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
+  collectedBlobs: 0
 --- !u!114 &173539321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15174,6 +15176,8 @@ MonoBehaviour:
   - {x: 8.28, y: 0.2, z: -3.71}
   - {x: 3.19, y: 0.2, z: 3.48}
   logic: {fileID: 250385955}
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!4 &989596007
 Transform:
   m_ObjectHideFlags: 0
@@ -27067,6 +27071,7 @@ MonoBehaviour:
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
+  collectedBlobs: 0
 --- !u!1 &1652803977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3632679686849174896, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
@@ -29879,6 +29884,7 @@ MonoBehaviour:
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
+  collectedBlobs: 0
 --- !u!114 &1976223309
 MonoBehaviour:
   m_ObjectHideFlags: 0
