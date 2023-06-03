@@ -17,6 +17,7 @@ public class SpeedItemScript : MonoBehaviour
 
     public PlayerControllerScript pC1WASD;
     public PlayerControllerScript pC2Arrows;
+    public AllItemsScript items;
 
     // Start is called before the first frame update
     void Start()
@@ -29,17 +30,21 @@ public class SpeedItemScript : MonoBehaviour
     {
         if (isCollided1)
         {
+            items.itemCounter += 1;
             pC1WASD.movementSpeed = 5f;
             StartCoroutine(Waiter());
             sphere.SetActive(false);
+            isCollided1 = false;
 
         }
 
         else if (isCollided2)
         {
+            items.itemCounter += 1;
             pC2Arrows.movementSpeed = 5f;
             StartCoroutine(Waiter());
             sphere.SetActive(false);
+            isCollided2 = false;
         }
 
     }
@@ -59,22 +64,6 @@ public class SpeedItemScript : MonoBehaviour
 
         }
         Debug.Log("im trigger methode: "+ isCollided1);
-
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        Debug.Log("im andere methode");
-        if (other.gameObject.CompareTag("Player1"))
-        {
-            isCollided1 = true;
-        }
-
-        if (other.gameObject.CompareTag("Player2"))
-        {
-            isCollided2 = true;
-        }
-        Debug.Log("im andere methode: " + isCollided1);
 
     }
 

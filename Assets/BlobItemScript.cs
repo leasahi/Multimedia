@@ -17,6 +17,7 @@ public class BlobItemScript : MonoBehaviour
 
     public GameObject sphere;
     public AllBlobsScript blobs;
+    public AllItemsScript items;
 
     // Start is called before the first frame update
     void Start()
@@ -29,21 +30,27 @@ public class BlobItemScript : MonoBehaviour
     {
         if (isCollided1)
         {
+            items.itemCounter += 1;
             if (blobs.allBlobsNew.Count > 0)
             {
                 blobs.NewBlob(0, blobPosition);
                 sphere.SetActive(false);
             }
+            sphere.SetActive(false);
+            isCollided1 = false;
 
         }
 
         else if (isCollided2)
         {
+            items.itemCounter += 1;
             if (blobs.allBlobsNew.Count > 0)
             {
                 blobs.NewBlob(0, blobPosition);
                 sphere.SetActive(false);
             }
+            sphere.SetActive(false);
+            isCollided2 = false;
         }
 
     }
