@@ -97,8 +97,10 @@ public class PlayerControllerScript : MonoBehaviour
             }
         }
 
+        
+
         // jump
-        if (playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && !isJumping)
+        if (playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && !isJumping || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)) && !isJumping)
         {
             //isJumping = true;
             r.velocity = Vector3.up * jumpStrength;
@@ -110,10 +112,10 @@ public class PlayerControllerScript : MonoBehaviour
 
         // jump
         //if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && canJump)) {
-          ////r.velocity = Vector3.up * jumpStrength;
-           // canJump = false;
-       // }
-       //
+        ////r.velocity = Vector3.up * jumpStrength;
+        // canJump = false;
+        // }
+        //
     }
 
     private void OnCollisionEnter(Collision other)

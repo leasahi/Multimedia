@@ -15511,9 +15511,7 @@ MonoBehaviour:
   - {fileID: 90935289}
   - {fileID: 1976223307}
   positions:
-  - {x: 5.15, y: 0.2, z: -1.05}
-  - {x: 8.28, y: 0.2, z: -3.71}
-  - {x: 3.19, y: 0.2, z: 3.48}
+  - {x: -6.95, y: 0, z: -0.68}
   allBlobsNew:
   - {fileID: 1651824288}
   - {fileID: 173539319}
@@ -17213,7 +17211,7 @@ MonoBehaviour:
   playerControls: 1
   movementSpeed: 3
   rotationSpeed: 5
-  jumpStrength: 0
+  jumpStrength: 3
   reversedWASD: 0
   reversedArrows: 0
   isJumping: 0
