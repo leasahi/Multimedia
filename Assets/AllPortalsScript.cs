@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AllPortalsScript : MonoBehaviour
 {
+
+    public GameObject[] allPortals;
+    public Vector3[] positions;
+
     // Start is called before the first frame update
     void Start()
     {

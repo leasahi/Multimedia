@@ -12476,6 +12476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db7399c1c17b4d4faa9bb0e104cdb12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allPortals: []
+  positions: []
 --- !u!1 &749365930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3940173894341326128, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
@@ -15179,7 +15181,7 @@ MonoBehaviour:
   - {fileID: 1651824288}
   - {fileID: 173539319}
   - {fileID: 90935289}
-  - {fileID: 90935289}
+  - {fileID: 1976223307}
   positionsNew: []
   logic: {fileID: 250385955}
   friend1: {fileID: 2004150780}
@@ -16673,7 +16675,7 @@ MonoBehaviour:
   friends1: 0
   friends2: 0
   friends2Text: {fileID: 527333457}
-  friends1Text: {fileID: 0}
+  friends1Text: {fileID: 816188667}
 --- !u!1001 &1163633679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30214,7 +30216,7 @@ MonoBehaviour:
   friends1: 0
   friends2: 0
   friends2Text: {fileID: 1608309911}
-  friends1Text: {fileID: 0}
+  friends1Text: {fileID: 816188667}
 --- !u!1 &2012080445 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6541919314637351521, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}

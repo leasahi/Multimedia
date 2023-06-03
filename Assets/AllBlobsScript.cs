@@ -33,7 +33,9 @@ public class AllBlobsScript : MonoBehaviour
         Debug.Log("Listenlänge: " + allBlobsNew.Count);
         allBlobsNew[randomBlobNew].transform.position = positions[randomPosition];
         allBlobsNew[randomBlobNew].SetActive(true);
+        Debug.Log("aktueller Blob: " + allBlobsNew[randomBlobNew]);
         allBlobsNew.Remove(allBlobsNew[randomBlobNew]);
+        Debug.Log("nachdem gelöscht Blob: " + allBlobsNew[randomBlobNew]);
         Debug.Log("Liste nach löschen: " + allBlobsNew.Count);
 
         //usedPositions.Add(positions[randomPosition]);
@@ -59,7 +61,9 @@ public class AllBlobsScript : MonoBehaviour
             Debug.Log("Listenlänge: " + allBlobsNew.Count);
             allBlobsNew[randomBlobNew].transform.position = positions[randomPosition];
             allBlobsNew[randomBlobNew].SetActive(true);
+            Debug.Log("aktueller Blob: " + allBlobsNew[randomBlobNew]);
             allBlobsNew.Remove(allBlobsNew[randomBlobNew]);
+            Debug.Log("nachdem gelöscht Blob: " + allBlobsNew[randomBlobNew]);
             Debug.Log("Liste nach löschen: " + allBlobsNew.Count);
 
                 oldFriendCounter = friend1.friends1 + friend2.friends2;
