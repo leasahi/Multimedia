@@ -13202,6 +13202,7 @@ MonoBehaviour:
   isCollided2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
+  Position: {fileID: 813117196}
   sphere: {fileID: 813117191}
   blobs: {fileID: 989596006}
   items: {fileID: 1426750230}
@@ -16600,6 +16601,7 @@ MonoBehaviour:
   isCollided2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
+  Position: {fileID: 1098624017}
   sphere: {fileID: 1098624012}
   blobs: {fileID: 989596006}
   items: {fileID: 1426750230}

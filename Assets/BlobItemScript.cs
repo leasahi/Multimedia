@@ -15,6 +15,8 @@ public class BlobItemScript : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
 
+    public Transform Position;
+
     public GameObject sphere;
     public AllBlobsScript blobs;
     public AllItemsScript items;
@@ -22,7 +24,9 @@ public class BlobItemScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        blobPosition = Position.position;
+        blobPosition.y += 1;
+
     }
 
     // Update is called once per frame
