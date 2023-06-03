@@ -7,6 +7,10 @@ public class AllBlobsScript : MonoBehaviour
 
     public GameObject[] allBlobs;
     public Vector3[] positions;
+
+    public List<GameObject> allBlobsNew;
+    public List<Vector3> positionsNew;
+
     private List<Vector3> usedPositions = new List<Vector3>();
     private List<GameObject> usedBlobs = new List<GameObject>();
     //private bool newBlob = true;
@@ -21,16 +25,26 @@ public class AllBlobsScript : MonoBehaviour
     {
         oldFriendCounter = friend1.friends1 + friend2.friends2;
 
-        int randomBlob = Random.Range(0, allBlobs.Length);
-        int randomPosition = Random.Range(0, positions.Length);
+        //int randomBlob = Random.Range(0, allBlobs.Length);
+        int randomPosition = Random.Range(0, positions.Length-1);
 
-        usedPositions.Add(positions[randomPosition]);
-        usedBlobs.Add(allBlobs[randomBlob]);
-        Debug.Log("Null dings position: " + positions[randomPosition]);
+        int randomBlobNew = Random.Range(0, allBlobsNew.Count-1);
 
-        allBlobs[randomBlob].transform.position = positions[randomPosition];
-        allBlobs[randomBlob].SetActive(true);
-        Debug.Log("Blob position: " + allBlobs[randomBlob].transform.position);
+        Debug.Log("Listenlänge: " + allBlobsNew.Count);
+        allBlobsNew[randomBlobNew].transform.position = positions[randomPosition];
+        allBlobsNew[randomBlobNew].SetActive(true);
+        allBlobsNew.Remove(allBlobsNew[randomBlobNew]);
+        Debug.Log("Liste nach löschen: " + allBlobsNew.Count);
+
+        //usedPositions.Add(positions[randomPosition]);
+        //usedBlobs.Add(allBlobs[randomBlob]);
+        //Debug.Log("Null dings position: " + positions[randomPosition]);
+
+       // allBlobs[randomBlob].transform.position = positions[randomPosition];
+       // allBlobs[randomBlob].SetActive(true);
+       // Debug.Log("Blob position: " + allBlobs[randomBlob].transform.position);
+
+
     }
 
     // Update is called once per frame
@@ -39,19 +53,17 @@ public class AllBlobsScript : MonoBehaviour
         if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
         {
 
-            int randomBlob = Random.Range(0, allBlobs.Length);
-            int randomPosition = Random.Range(0, positions.Length);
+            int randomBlobNew = Random.Range(0, allBlobsNew.Count - 1);
+            int randomPosition = Random.Range(0, positions.Length-1);
 
-            if (!usedPositions.Contains(positions[randomPosition]) && !usedBlobs.Contains(allBlobs[randomBlob]))
-            {
-                allBlobs[randomBlob].transform.position = positions[randomPosition];
-                allBlobs[randomBlob].SetActive(true);
-                usedPositions.Add(positions[randomPosition]);
-                usedBlobs.Add(allBlobs[randomBlob]);
+            Debug.Log("Listenlänge: " + allBlobsNew.Count);
+            allBlobsNew[randomBlobNew].transform.position = positions[randomPosition];
+            allBlobsNew[randomBlobNew].SetActive(true);
+            allBlobsNew.Remove(allBlobsNew[randomBlobNew]);
+            Debug.Log("Liste nach löschen: " + allBlobsNew.Count);
 
-                Debug.Log("Blob position: " + allBlobs[randomBlob].transform.position);
                 oldFriendCounter = friend1.friends1 + friend2.friends2;
-            }
+            
         }
     }
 }

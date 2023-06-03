@@ -15175,9 +15175,16 @@ MonoBehaviour:
   - {x: 5.15, y: 0.2, z: -1.05}
   - {x: 8.28, y: 0.2, z: -3.71}
   - {x: 3.19, y: 0.2, z: 3.48}
+  allBlobsNew:
+  - {fileID: 1651824288}
+  - {fileID: 173539319}
+  - {fileID: 90935289}
+  - {fileID: 90935289}
+  positionsNew: []
   logic: {fileID: 250385955}
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  oldFriendCounter: 0
 --- !u!4 &989596007
 Transform:
   m_ObjectHideFlags: 0
@@ -16666,6 +16673,7 @@ MonoBehaviour:
   friends1: 0
   friends2: 0
   friends2Text: {fileID: 527333457}
+  friends1Text: {fileID: 0}
 --- !u!1001 &1163633679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30206,6 +30214,7 @@ MonoBehaviour:
   friends1: 0
   friends2: 0
   friends2Text: {fileID: 1608309911}
+  friends1Text: {fileID: 0}
 --- !u!1 &2012080445 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6541919314637351521, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}

@@ -10,6 +10,7 @@ public class FriendCountScript : MonoBehaviour
     public int friends2;
 
     public Text friends2Text;
+    public Text friends1Text;
 
 
     // Start is called before the first frame update
@@ -24,5 +25,6 @@ public class FriendCountScript : MonoBehaviour
     void Update()
     {
         friends2Text.text = friends2.ToString();
+        friends1Text.text = friends1.ToString();
     }
 }
