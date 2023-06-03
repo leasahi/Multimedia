@@ -54,20 +54,28 @@ public class AllBlobsScript : MonoBehaviour
     {
         if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
         {
-
+            if (allBlobsNew.Count > 0)
+            {
+                int randomPosition = Random.Range(0, positions.Length - 1);
             int randomBlobNew = Random.Range(0, allBlobsNew.Count - 1);
-            int randomPosition = Random.Range(0, positions.Length-1);
+             
+            NewBlob(randomBlobNew, positions[randomPosition]);
+            }
 
-            Debug.Log("Listenlänge: " + allBlobsNew.Count);
-            allBlobsNew[randomBlobNew].transform.position = positions[randomPosition];
-            allBlobsNew[randomBlobNew].SetActive(true);
-            Debug.Log("aktueller Blob: " + allBlobsNew[randomBlobNew]);
-            allBlobsNew.Remove(allBlobsNew[randomBlobNew]);
-            Debug.Log("nachdem gelöscht Blob: " + allBlobsNew[randomBlobNew]);
+        }
+    }
+
+    public void NewBlob(int randomBlob, Vector3 position)
+    {
+        allBlobsNew[randomBlob].transform.position = position;
+        Debug.Log("Listenlänge: " + allBlobsNew.Count);
+            
+            allBlobsNew[randomBlob].SetActive(true);
+            Debug.Log("aktueller Blob: " + allBlobsNew[randomBlob]);
+            allBlobsNew.Remove(allBlobsNew[randomBlob]);
+            
             Debug.Log("Liste nach löschen: " + allBlobsNew.Count);
 
-                oldFriendCounter = friend1.friends1 + friend2.friends2;
-            
-        }
+            oldFriendCounter = friend1.friends1 + friend2.friends2;
     }
 }
