@@ -8,6 +8,8 @@ TagManager:
   - Player1
   - Player2
   - Pilzhaus1
+  - Pilzwald
+  - Insel
   layers:
   - Default
   - TransparentFX

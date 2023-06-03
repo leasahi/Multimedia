@@ -9,6 +9,10 @@ public class BlobScript : MonoBehaviour
     public bool invited = false;
 
 
+    public bool isCollided1 = false;
+    public bool isCollided2 = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,23 +22,43 @@ public class BlobScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!invited && collided && Input.GetKey(KeyCode.X))
+        if (!invited && isCollided1 && Input.GetKey(KeyCode.X))
         {
             invited = true;
            // logic.addScore();
+        } else if (!invited && isCollided2 && Input.GetKey(KeyCode.L))
+        {
+            invited = true;
+
         }
-       
+
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        collided = true;
+        if (collision.gameObject.CompareTag("Player1"))
+        {
+            isCollided1 = true;
+        }
+
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            isCollided2 = true;
+        }
 
     }
 
     private void OnTriggerExit(Collider collision)
     {
-        collided = false;
+        if (collision.gameObject.CompareTag("Player1"))
+        {
+            isCollided1 = false;
+        }
+
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            isCollided2 = false;
+        }
     }
 
     public int getScore()

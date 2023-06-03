@@ -14,7 +14,9 @@ public class PlayerControllerScript : MonoBehaviour
     public float jumpStrength;
     public bool reversedWASD = false;
     public bool reversedArrows = false;
-    private bool isJumping = false;
+    public bool isJumping = false;
+    public bool canJump = true;
+
 
     Rigidbody r;
     float gravity = 10.0f;
@@ -105,5 +107,21 @@ public class PlayerControllerScript : MonoBehaviour
         {
             isJumping = false;
         }
+
+        // jump
+        //if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && canJump)) {
+          ////r.velocity = Vector3.up * jumpStrength;
+           // canJump = false;
+       // }
+       //
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Pilzwald") || other.gameObject.CompareTag("Insel"))
+        {
+            canJump = true;
+        }
+
     }
 }

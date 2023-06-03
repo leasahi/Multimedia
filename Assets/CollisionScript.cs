@@ -70,7 +70,7 @@ public class CollisionScript : MonoBehaviour
         {
             if (!counted)
             {
-                friend2.friends2 += 1;
+                //friend2.friends2 += 1;
                 counted = true;
             }
             this.transform.SetParent(player2.transform);
@@ -120,6 +120,7 @@ public class CollisionScript : MonoBehaviour
             isCollided2 = false;
             currentBlob.SetActive(false);
             isHome2 = true;
+            friend2.friends2 += 1;
         }
 
     }
