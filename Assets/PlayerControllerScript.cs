@@ -100,15 +100,13 @@ public class PlayerControllerScript : MonoBehaviour
         
 
         // jump
-        if (playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && !isJumping || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)) && !isJumping)
+        if (playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && canJump || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)) && canJump)
         {
             //isJumping = true;
+            canJump = false;
             r.velocity = Vector3.up * jumpStrength;
         }
-        if (r.velocity.y == 0.0f)
-        {
-            isJumping = false;
-        }
+        
 
         // jump
         //if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && canJump)) {
@@ -118,12 +116,17 @@ public class PlayerControllerScript : MonoBehaviour
         //
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Pilzwald") || other.gameObject.CompareTag("Insel"))
-        {
-            canJump = true;
-        }
+    
 
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        canJump = true;
     }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        canJump = false;
+    }
+
 }

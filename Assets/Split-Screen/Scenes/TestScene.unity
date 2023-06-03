@@ -30776,6 +30776,7 @@ GameObject:
   - component: {fileID: 2004150778}
   - component: {fileID: 2004150777}
   - component: {fileID: 2004150780}
+  - component: {fileID: 2004150781}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player1
@@ -30868,6 +30869,20 @@ MonoBehaviour:
   friends2: 0
   friends2Text: {fileID: 1608309911}
   friends1Text: {fileID: 816188667}
+--- !u!136 &2004150781
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004150775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 0.75
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.33, z: -0.3}
 --- !u!1 &2012080445 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6541919314637351521, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
