@@ -3,7 +3,67 @@ guid: 9f14ebccf01f84b6f82cd028739b778e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiHuegel4
+    second: {fileID: 2100000, guid: 80ba1ea58cd4b4fcd8aafb1d2051148c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzStamm2
+    second: {fileID: 2100000, guid: 18537389041284ebebd6021e6c920f9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzStamm3
+    second: {fileID: 2100000, guid: 127037a0d7eb244a4bf8f73c874ac978, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzeHuegel2
+    second: {fileID: 2100000, guid: a3144b85df3024e959999eb3b36ccf7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzeHuegel3
+    second: {fileID: 2100000, guid: 8a99a20d545e14778b6b3f706f8e21e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzeHuegel4
+    second: {fileID: 2100000, guid: ca905f714148c4f1ab17030164f73b56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzeHuegel6
+    second: {fileID: 2100000, guid: 0f1ef7210ad3f44aa91fcd57c39aa621, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzstamm6
+    second: {fileID: 2100000, guid: fa66bd5de1afc487ebbf3ff41221b902, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzstammeHuegel
+    second: {fileID: 2100000, guid: 24a1a1f39e1f44e80bddea0bb5969f34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzstammeHuegel2
+    second: {fileID: 2100000, guid: c19ab48d288574bdb95b06f4389deeea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPilzstammeHuegel3
+    second: {fileID: 2100000, guid: 4bf0491f4194845c5994172728a929e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiPortals
+    second: {fileID: 2100000, guid: 159e24773cf194facb65884b2d4ede76, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
