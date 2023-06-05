@@ -20,6 +20,9 @@ public class ReverseControlScript : MonoBehaviour
     public PlayerControllerScript pC2Arrows;
     public AllItemsScript items;
 
+    Vector3 temp = new Vector3(0, -100, 0);
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +48,6 @@ public class ReverseControlScript : MonoBehaviour
             items.itemCounter += 1;
             pC2Arrows.reversedArrows = true;
             StartCoroutine(Waiter());
-            sphere.SetActive(false);
             isCollided2 = false;
         }
 
@@ -67,12 +69,16 @@ public class ReverseControlScript : MonoBehaviour
 
     private IEnumerator Waiter()
     {
+        transform.position += temp;
         yield return new WaitForSecondsRealtime(20);
         pC1WASD.reversedWASD = false;
         isCollided1 = false;
 
         pC2Arrows.reversedArrows = false;
         isCollided2 = false;
+        yield return new WaitForSecondsRealtime(20);
+        sphere.SetActive(false);
+
 
     }
 }

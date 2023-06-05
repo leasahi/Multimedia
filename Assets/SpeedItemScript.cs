@@ -19,6 +19,9 @@ public class SpeedItemScript : MonoBehaviour
     public PlayerControllerScript pC2Arrows;
     public AllItemsScript items;
 
+    Vector3 temp = new Vector3(0, -100, 0);
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,6 @@ public class SpeedItemScript : MonoBehaviour
             items.itemCounter += 1;
             pC1WASD.movementSpeed = 5f;
             StartCoroutine(Waiter());
-            sphere.SetActive(false);
             isCollided1 = false;
 
         }
@@ -69,12 +71,18 @@ public class SpeedItemScript : MonoBehaviour
 
     private IEnumerator Waiter()
     {
+        transform.position += temp;
+
         yield return new WaitForSecondsRealtime(20);
         pC1WASD.movementSpeed = 3f;
         isCollided1 = false;
 
         pC2Arrows.movementSpeed = 3f;
         isCollided2 = false;
+
+        yield return new WaitForSecondsRealtime(20);
+        sphere.SetActive(false);
+
 
     }
 }
