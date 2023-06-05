@@ -38,7 +38,6 @@ public class ReverseControlScript : MonoBehaviour
             items.itemCounter += 1;
             pC1WASD.reversedWASD = true;
             StartCoroutine(Waiter());
-            sphere.SetActive(false);
             isCollided1 = false;
 
         }

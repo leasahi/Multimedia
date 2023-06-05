@@ -45,7 +45,6 @@ public class SpeedItemScript : MonoBehaviour
             items.itemCounter += 1;
             pC2Arrows.movementSpeed = 5f;
             StartCoroutine(Waiter());
-            sphere.SetActive(false);
             isCollided2 = false;
         }
 
