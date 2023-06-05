@@ -56,7 +56,7 @@ public class CollisionScript : MonoBehaviour
             //player.transform.SetParent(this.transform);
             if (!counted)
             {
-                friend1.friends1 += 1;
+                //friend1.friends1 += 1;
                 counted = true;
                 collectedBlobs += 1;
             }
@@ -115,7 +115,7 @@ public class CollisionScript : MonoBehaviour
 
             currentBlob.SetActive(false);
             isHome1 = true;
-            logic.addScore();
+            friend1.friends1 += 1;
             collectedBlobs += 1;
         }
 
