@@ -35,6 +35,7 @@ public class ReverseControlScript : MonoBehaviour
 
         if (isCollided1)
         {
+            sphere.transform.position += temp;
             items.itemCounter += 1;
             pC1WASD.reversedWASD = true;
             StartCoroutine(Waiter());
@@ -44,10 +45,12 @@ public class ReverseControlScript : MonoBehaviour
 
         else if (isCollided2)
         {
+            sphere.transform.position += temp;
             items.itemCounter += 1;
             pC2Arrows.reversedArrows = true;
             StartCoroutine(Waiter());
             isCollided2 = false;
+
         }
 
     }
@@ -68,7 +71,7 @@ public class ReverseControlScript : MonoBehaviour
 
     private IEnumerator Waiter()
     {
-        transform.position += temp;
+       
         yield return new WaitForSecondsRealtime(20);
         pC1WASD.reversedWASD = false;
         isCollided1 = false;
