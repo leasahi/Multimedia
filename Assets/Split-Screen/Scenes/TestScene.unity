@@ -1732,8 +1732,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
+  position: {x: 0.9, y: -1.14, z: 26.64}
+  rotation: {x: 0, y: -0.95452696, z: 0, w: 0.2981248}
 --- !u!65 &119115038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3032,6 +3032,9 @@ MonoBehaviour:
   gameOverScreen: {fileID: 2089083987}
   startGameScreen: {fileID: 20028376}
   Timer: {fileID: 251546197}
+  player1: {fileID: 2004150779}
+  player2: {fileID: 1159009621}
+  gamePaused: 0
 --- !u!4 &250385956
 Transform:
   m_ObjectHideFlags: 0
@@ -20323,8 +20326,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
-  position: {x: 0, y: 0, z: 0}
-  rotation: {x: 0, y: 0, z: 0, w: 0}
+  position: {x: 9.76, y: -0.65, z: -18.55}
+  rotation: {x: 0, y: -0.766493, z: 0, w: 0.6422527}
 --- !u!65 &1079725236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21365,6 +21368,7 @@ MonoBehaviour:
   reversedArrows: 0
   isJumping: 0
   canJump: 1
+  logic: {fileID: 250385955}
 --- !u!4 &1159009622
 Transform:
   m_ObjectHideFlags: 0
@@ -36277,6 +36281,7 @@ MonoBehaviour:
   reversedArrows: 0
   isJumping: 0
   canJump: 1
+  logic: {fileID: 250385955}
 --- !u!114 &2004150780
 MonoBehaviour:
   m_ObjectHideFlags: 0
