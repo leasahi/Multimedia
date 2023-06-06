@@ -11,6 +11,9 @@ public class LogicScript : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject startGameScreen;
     public GameObject Timer;
+    public GameObject pauseIcon;
+    public GameObject player1; //main camera of player 1
+    public GameObject player2; //main camera of player 2
     public bool gamePaused = false;
 
     private void Update()
@@ -26,12 +29,36 @@ public class LogicScript : MonoBehaviour
                 PauseGame();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            // Aktiviert den anderen Audio Listener
+            SwitchAudioListener();
+        }
+    }
+
+    private void SwitchAudioListener()
+    {
+        var p1AudioListener = player1.GetComponent<AudioListener>();
+        var p2AudioListener = player2.GetComponent<AudioListener>();
+
+        if(p1AudioListener.enabled == false)
+        {
+            p2AudioListener.enabled = false;
+            p1AudioListener.enabled = true;
+        }
+        else
+        {
+            p1AudioListener.enabled = false;
+            p2AudioListener.enabled = true;
+        }
     }
 
     private void PauseGame()
     {
         Time.timeScale = 0f; // Setze die Zeit auf 0, um das Spiel zu pausieren
         gamePaused = true;
+        pauseIcon.SetActive(true);
         Debug.Log("Spiel pausiert");
     }
 
@@ -39,6 +66,7 @@ public class LogicScript : MonoBehaviour
     {
         Time.timeScale = 1f; // Setze die Zeit auf 1, um das Spiel fortzusetzen
         gamePaused = false;
+        pauseIcon.SetActive(false);
         Debug.Log("Spiel fortgesetzt");
     }
 
