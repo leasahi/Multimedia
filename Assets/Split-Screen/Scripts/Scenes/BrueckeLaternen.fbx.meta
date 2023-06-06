@@ -3,7 +3,22 @@ guid: e7e3b50e95c6f4bb5ab28cd5d980dbbb
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiHuegel10hellgelb
+    second: {fileID: 2100000, guid: 0725f7bb48cf541e5ab176748d880e1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiHuegel3
+    second: {fileID: 2100000, guid: e4e5198eb852647aa8192a116ab49f57, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface37
+    second: {fileID: 2100000, guid: 4df4defddb043483093f864ee4e5e7ad, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
