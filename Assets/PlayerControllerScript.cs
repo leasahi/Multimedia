@@ -103,20 +103,12 @@ public class PlayerControllerScript : MonoBehaviour
         
 
             // jump
-            if (playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && canJump || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)) && canJump)
+            if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space)) && canJump || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)) && canJump)
             {
-                //isJumping = true;
                 canJump = false;
                 r.velocity = Vector3.up * jumpStrength;
             }
 
-
-            // jump
-            //if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space) && canJump)) {
-            ////r.velocity = Vector3.up * jumpStrength;
-            // canJump = false;
-            // }
-            //
         }
     }
 
