@@ -103,8 +103,12 @@ public class PlayerControllerScript : MonoBehaviour
         
 
             // jump
-            if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space)) && canJump || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)) && canJump)
+            if (!isJumping &&
+                ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space))
+                || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)))
+                && canJump)
             {
+                isJumping = true;
                 canJump = false;
                 r.velocity = Vector3.up * jumpStrength;
             }
@@ -116,10 +120,12 @@ public class PlayerControllerScript : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         canJump = true;
+        isJumping = false;
     }
 
     private void OnTriggerExit(Collider collision)
     {
+        
         canJump = false;
     }
 
