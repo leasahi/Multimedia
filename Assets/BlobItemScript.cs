@@ -25,7 +25,7 @@ public class BlobItemScript : MonoBehaviour
     void Start()
     {
         blobPosition = Position.position;
-        blobPosition.y += 1;
+        //blobPosition.y += 1;
 
     }
 
