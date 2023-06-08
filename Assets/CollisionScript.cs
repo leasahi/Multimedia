@@ -12,6 +12,8 @@ public class CollisionScript : MonoBehaviour
     Vector3 home1coordinates = new Vector3(7.0f, 0, 0);
     Vector3 home2coordinates = new Vector3(7.0f, 0, 0);
     public BlobScript bS;
+    public bool invited1 = false;
+    public bool invited2 = false;
     public GameObject player1;
     public GameObject player2;
     public GameObject currentBlob;
@@ -27,8 +29,8 @@ public class CollisionScript : MonoBehaviour
 
     public bool counted = false;
     public int collectedBlobs = 0;
-    public Vector3 offset1 = new Vector3(0.9f, 0.2f, 0.0f);
-
+     Vector3 offset1 = new Vector3(0.8199f, 0.119f, 0);
+     Vector3 offset2 = new Vector3(0.93f, 0.33f, 0.0f);
 
 
     // Start is called before the first frame update
@@ -40,42 +42,72 @@ public class CollisionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isCollided1 && bS.invited1)
-        {
-            //player.transform.SetParent(this.transform);
-            if (!counted)
-            {
-                counted = true;
-                collectedBlobs += 1;
-            }
-            this.transform.SetParent(player1.transform);
-            this.transform.position = player1.transform.position + offset1;
-            //not yet correct, trying to figure out the maths
-           
-            this.transform.LookAt(p1);
+        //invited1 = bS.invited1;
+        //invited2 = bS.invited2;
 
-           
-        }
-        else if (isCollided2 && bS.invited2)
+        if (!invited1 && isCollided1 && Input.GetKey(KeyCode.X))
         {
-            if (!counted)
+            invited1 = true;
+        }
+        else if (!invited2 && isCollided2 && Input.GetKey(KeyCode.L))
+        {
+            invited2 = true;
+
+        }
+
+        Debug.Log("Blob: "+ currentBlob + ", & Collision parent: " + this.transform.parent);
+        if (isCollided1 && invited1)
+        {
+            Debug.Log("im P1 IF also isCollided1 true");
+         
+
+
+            if (this.transform.parent == player2.transform)
             {
-                //friend2.friends2 += 1;
-                counted = true;
-                collectedBlobs += 1;
+                Debug.Log("im P1 klauen");
+                invited2 = false;
+                isCollided2 = false;
+
+                this.transform.SetParent(null);
+                this.transform.SetParent(player1.transform);
+                this.transform.position = player1.transform.position + offset1;
+                this.transform.LookAt(p1);
+
             }
-            this.transform.SetParent(player2.transform);
-            //Vector3 bar = player2.transform.position;
-            this.transform.position = player2.transform.position;
-            this.transform.position -= player2.transform.forward * (distance * friend2.friends2);
-            this.transform.LookAt(p2);
+            else
+            {
+                this.transform.SetParent(player1.transform);
+                this.transform.position = player1.transform.position + offset1;
+                this.transform.LookAt(p1);
+            }
+
         }
-        else
+        if (isCollided2 && invited2)
         {
-            this.transform.SetParent(null);
+            Debug.Log("im P1 IF also isCollided2 true");
+            
+            if (this.transform.parent == player1.transform)
+            {
+                Debug.Log("im P2 klauen");
+                invited1 = false;
+                isCollided1 = false;
+
+                this.transform.SetParent(null);
+                this.transform.SetParent(player2.transform);
+                this.transform.position = player2.transform.position + offset2;
+                this.transform.LookAt(p2);
+
+            }
+            else
+            {
+                this.transform.SetParent(player2.transform);
+                this.transform.position = player2.transform.position + offset2;
+                this.transform.LookAt(p2);
+            }
         }
+       
     }
-    private void OnCollisionEnter(Collision other)
+    /*private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Player1"))
         {
@@ -86,12 +118,24 @@ public class CollisionScript : MonoBehaviour
             isCollided2 = true;
         }
 
-    }
+    }*/
     private void OnTriggerEnter(Collider collision)
     {
-        if (isCollided1 && collision == home1.GetComponent<Collider>())
+        if (collision.gameObject.CompareTag("Player1"))
+        {
+            isCollided1 = true;
+        }
+
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            isCollided2 = true;
+        }
+
+
+        if (isCollided1 && invited2 && collision == home1.GetComponent<Collider>())
         {
             isCollided1 = false;
+            invited1 = false;
             currentBlob.SetActive(false);
             isHome1 = true;
             friend1.friends1 += 1;
@@ -99,9 +143,10 @@ public class CollisionScript : MonoBehaviour
             collectedBlobs += 1;
         }
 
-        if (isCollided2 && collision == home2.GetComponent<Collider>())
+        if (isCollided2 && invited2 && collision == home2.GetComponent<Collider>())
         {
             isCollided2 = false;
+            invited2 = false;
             currentBlob.SetActive(false);
             isHome2 = true;
             friend2.friends2 += 1;
