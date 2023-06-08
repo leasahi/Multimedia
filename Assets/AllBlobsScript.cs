@@ -19,6 +19,9 @@ public class AllBlobsScript : MonoBehaviour
     public FriendCountScript friend2;
     public bool multipleBlobs1 = false;
     public bool multipleBlobs2 = false;
+    public Vector3 offset1 = new Vector3(-0.9f, 0.2f, 0.0f);
+    public Vector3 offset2 = new Vector3(0.9f, 0.2f, 0.0f);
+    public Vector3 currentOffset;
     public int oldFriendCounter = 0;
 
 
@@ -69,14 +72,24 @@ public class AllBlobsScript : MonoBehaviour
             }
 
         }
-        if(friend1.followingFriends1 == 1)
+        if(friend1.followingFriends1 == 2)
         {
             multipleBlobs1 = true;
+            currentOffset = offset1;
+        }
+        else
+        {
+            multipleBlobs1 = false;
+            currentOffset = offset2;
         }
 
-        if (friend2.followingFriends2 == 1)
+        if (friend2.followingFriends2 == 2)
         {
             multipleBlobs2 = true;
+        }
+        else
+        {
+            multipleBlobs2 = false;
         }
     }
 

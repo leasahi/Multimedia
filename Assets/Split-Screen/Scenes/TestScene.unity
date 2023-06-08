@@ -424,7 +424,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e7e3b50e95c6f4bb5ab28cd5d980dbbb, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e7e3b50e95c6f4bb5ab28cd5d980dbbb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1192,17 +1192,14 @@ MonoBehaviour:
   currentBlob: {fileID: 90935289}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &90935291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1937,17 +1934,14 @@ MonoBehaviour:
   currentBlob: {fileID: 173539319}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 0}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &173539321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2602,7 +2596,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &250385957
 MonoBehaviour:
@@ -3270,7 +3264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317673267}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.21, z: 0}
+  m_LocalPosition: {x: 0.43, y: 3.21, z: 0.52}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3414,7 +3408,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341685536 stripped
 GameObject:
@@ -3905,7 +3899,7 @@ RectTransform:
   - {fileID: 953504131}
   - {fileID: 461596892}
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6843,90 +6837,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7935266403879479732, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
---- !u!1 &541335998
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 541335999}
-  - component: {fileID: 541336000}
-  m_Layer: 0
-  m_Name: BlobPointer22
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &541335999
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541335998}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.21, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 742359816890532885}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!212 &541336000
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 541335998}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 005c064a3de4a48a2860da5c0c1be270, type: 3}
-  m_Color: {r: 1, g: 0.83246034, b: 0.6179246, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.95, y: 4.95}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &541352290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7757973114344433716, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
@@ -7595,7 +7505,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 005c064a3de4a48a2860da5c0c1be270, type: 3}
-  m_Color: {r: 1, g: 0.83246034, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.61960787, b: 0.6552225, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7613,7 +7523,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 649640590}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.21, z: 0}
+  m_LocalPosition: {x: 0, y: 20.54, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8347,7 +8257,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 707922e767c9e4c2cb389a2413e2d099, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 707922e767c9e4c2cb389a2413e2d099, type: 3}
       propertyPath: m_LocalScale.x
@@ -8439,7 +8349,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e1cb6181117245409c933ac929028b4, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e1cb6181117245409c933ac929028b4, type: 3}
       propertyPath: m_LocalScale.x
@@ -8626,7 +8536,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 005c064a3de4a48a2860da5c0c1be270, type: 3}
-  m_Color: {r: 1, g: 0.83246034, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.61960787, b: 0.6552225, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8644,7 +8554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728164291}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 33.59846, z: 0}
+  m_LocalPosition: {x: -15.1, y: 33.59846, z: 19.01}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -13461,7 +13371,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &739145183
 MeshCollider:
@@ -13510,7 +13420,7 @@ Transform:
   - {fileID: 1230362296}
   - {fileID: 35588502}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &740916352
 MonoBehaviour:
@@ -14844,7 +14754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -16473,90 +16383,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8406400118328708448, guid: 4cc1a68194c4a489ebe0befc060aea0e, type: 3}
---- !u!1 &895571119
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 895571120}
-  - component: {fileID: 895571121}
-  m_Layer: 0
-  m_Name: BlobPointer15
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &895571120
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895571119}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.21, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1446625763974261940}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!212 &895571121
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895571119}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 005c064a3de4a48a2860da5c0c1be270, type: 3}
-  m_Color: {r: 1, g: 0.83246034, b: 0.6179246, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.95, y: 4.95}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &896878983 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6000947061927288331, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
@@ -17631,6 +17457,9 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   multipleBlobs1: 0
   multipleBlobs2: 0
+  offset1: {x: -0.9, y: 0.2, z: 0}
+  offset2: {x: 0.9, y: 0.2, z: 0}
+  currentOffset: {x: 0, y: 0, z: 0}
   oldFriendCounter: 0
 --- !u!4 &989596007
 Transform:
@@ -17648,8 +17477,34 @@ Transform:
   - {fileID: 173539326}
   - {fileID: 90935296}
   - {fileID: 1976223314}
+  - {fileID: 5520064288959868264}
+  - {fileID: 5686228087922720133}
+  - {fileID: 504720829020987534}
+  - {fileID: 6523120926934218731}
+  - {fileID: 79834553235774596}
+  - {fileID: 879954496084032631}
+  - {fileID: 9099763631322248914}
+  - {fileID: 4206928369076459488}
+  - {fileID: 3682801650002235083}
+  - {fileID: 7186666634689865458}
+  - {fileID: 8962604699181631459}
+  - {fileID: 3714526769281519247}
+  - {fileID: 194944941842041764}
+  - {fileID: 9121778923504011839}
+  - {fileID: 1446625763974261940}
+  - {fileID: 297652110138602437}
+  - {fileID: 8935094001922161934}
+  - {fileID: 2079627050868573598}
+  - {fileID: 4511939429038389300}
+  - {fileID: 2523339002966635677}
+  - {fileID: 5535091182530797825}
+  - {fileID: 742359816890532885}
+  - {fileID: 3364975886180351426}
+  - {fileID: 7567697128156422006}
+  - {fileID: 4069020699681425777}
+  - {fileID: 6997339527546471008}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &989625537 stripped
 GameObject:
@@ -19336,7 +19191,7 @@ Transform:
   - {fileID: 928117632}
   - {fileID: 606586382}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 301, z: 0}
 --- !u!114 &1159009623
 MonoBehaviour:
@@ -20783,7 +20638,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 76e230f20ebad4a159ffb102208e1fe8, type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 76e230f20ebad4a159ffb102208e1fe8, type: 3}
       propertyPath: m_LocalScale.x
@@ -21435,90 +21290,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393248201}
   m_Mesh: {fileID: 2635094595480926024, guid: 9f14ebccf01f84b6f82cd028739b778e, type: 3}
---- !u!1 &1400992403
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1400992404}
-  - component: {fileID: 1400992405}
-  m_Layer: 0
-  m_Name: BlobPointer6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1400992404
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400992403}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.21, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 879954496084032631}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!212 &1400992405
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400992403}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 005c064a3de4a48a2860da5c0c1be270, type: 3}
-  m_Color: {r: 1, g: 0.83246034, b: 0.6179246, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.95, y: 4.95}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1402578986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2981451829997229230, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
@@ -21860,7 +21631,7 @@ Transform:
   - {fileID: 1117095544}
   - {fileID: 292626142}
   m_Father: {fileID: 0}
-  m_RootOrder: 49
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1426750230
 MonoBehaviour:
@@ -26708,7 +26479,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1437731558
 GameObject:
@@ -26783,7 +26554,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1441651304
 GameObject:
@@ -28557,7 +28328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631362966}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.21, z: 0}
+  m_LocalPosition: {x: 0.67, y: 3.21, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -28836,17 +28607,14 @@ MonoBehaviour:
   currentBlob: {fileID: 1651824288}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!64 &1652271902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29165,7 +28933,7 @@ Transform:
   - {fileID: 866039776}
   - {fileID: 3323071}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687803943 stripped
 GameObject:
@@ -29323,7 +29091,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 50fdc179ef47042fc92dd5747c8c84a4, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50fdc179ef47042fc92dd5747c8c84a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -29913,10 +29681,19 @@ MonoBehaviour:
   - {fileID: 728164291}
   positions:
   - {x: 2.37, y: 33.59846, z: -1.67}
-  - {x: 0.41, y: 33.59846, z: -2.77}
-  - {x: 3.1, y: 33.59846, z: 0.24}
-  - {x: -0.19, y: 33.59846, z: -0.27}
+  - {x: -2.36, y: 33.59846, z: -5.59}
+  - {x: 10.1, y: 33.59846, z: -4.41}
+  - {x: -15.1, y: 33.59846, z: 19.01}
+  - {x: -14.61, y: 20.54, z: -1.69}
+  - {x: -25.28, y: 19.9, z: 6.8}
+  - {x: 18.2, y: 19.9, z: 10.49}
+  - {x: 13.93, y: 19.9, z: -16.56}
+  - {x: -0.3, y: 19.9, z: -15.3}
+  - {x: -14, y: 19.9, z: -22.06}
+  - {x: -5.56, y: 19.9, z: 20}
   logic: {fileID: 250385955}
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!4 &1711701910
 Transform:
   m_ObjectHideFlags: 0
@@ -29934,7 +29711,7 @@ Transform:
   - {fileID: 1920896631}
   - {fileID: 728164293}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1715106752
 MeshCollider:
@@ -30331,7 +30108,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1757894204
 MeshCollider:
@@ -31867,7 +31644,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 005c064a3de4a48a2860da5c0c1be270, type: 3}
-  m_Color: {r: 1, g: 0.83246034, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.61960787, b: 0.6552225, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31885,7 +31662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920896629}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 33.59846, z: 0}
+  m_LocalPosition: {x: 0, y: 20.54, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -31998,7 +31775,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 005c064a3de4a48a2860da5c0c1be270, type: 3}
-  m_Color: {r: 1, g: 0.83246034, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.61960787, b: 0.6552225, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -32016,7 +31793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939313079}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 33.59846, z: 0}
+  m_LocalPosition: {x: 0, y: 20.54, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -32351,17 +32128,14 @@ MonoBehaviour:
   currentBlob: {fileID: 1976223307}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &1976223309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32618,7 +32392,7 @@ Transform:
   - {fileID: 500228584}
   - {fileID: 142338979}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -1330.7, z: 0}
 --- !u!136 &2004150777
 CapsuleCollider:
@@ -33181,7 +32955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037607932}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.21, z: 0}
+  m_LocalPosition: {x: 0, y: 3.21, z: -0.55}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -34107,8 +33881,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1898470262}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &87335602331759365
 MeshRenderer:
@@ -34521,8 +34295,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1074782043}
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &206154416300941015
 Transform:
@@ -34610,8 +34384,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1730512451}
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &297679679764713685
 MeshFilter:
@@ -34977,8 +34751,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 317673268}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &515001726892651028
 MeshFilter:
@@ -35296,7 +35070,7 @@ Transform:
   - {fileID: 2019760747}
   - {fileID: 1393248202}
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543803498380652402
 GameObject:
@@ -35765,10 +35539,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10.46681, y: 10.46681, z: 10.46681}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 541335999}
-  m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_Children: []
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &761663145852655852
 MeshFilter:
@@ -35952,10 +35725,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10.46681, y: 10.46681, z: 10.46681}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1400992404}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Children: []
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &881563655721054828
 MeshFilter:
@@ -37078,10 +36850,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10.46681, y: 10.46681, z: 10.46681}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 895571120}
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Children: []
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500241230653188302
 GameObject:
@@ -38371,8 +38142,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1910298173}
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2095248579898037738
 Transform:
@@ -39109,13 +38880,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5928341570234464952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.24, y: 0, z: 3.85}
   m_LocalScale: {x: 10.46681, y: 10.46681, z: 10.46681}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2019046015}
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2524174357882124690
 MeshFilter:
@@ -40702,8 +40473,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1313395086}
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3368018335332706588
 MeshRenderer:
@@ -41384,8 +41155,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1883920447}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3703959526313735309
 Transform:
@@ -41430,8 +41201,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 190011024}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3728527394339636612
 Transform:
@@ -41501,17 +41272,14 @@ MonoBehaviour:
   currentBlob: {fileID: 517600316657586196}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &3755974043173854995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41624,17 +41392,14 @@ MonoBehaviour:
   currentBlob: {fileID: 1315845558067813922}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &3756497675373064519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42363,8 +42128,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 875679009}
-  m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4074494968556785449
 GameObject:
@@ -42472,17 +42237,14 @@ MonoBehaviour:
   currentBlob: {fileID: 1398636637041345119}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &4132371546481140167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42687,8 +42449,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1631362967}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4208902426544904650
 GameObject:
@@ -42857,17 +42619,14 @@ MonoBehaviour:
   currentBlob: {fileID: 4288405936586614855}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &4288405936586614857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43334,8 +43093,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1888763970}
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4519817739042672552
 MeshFilter:
@@ -45481,8 +45240,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1497912301}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5523939698901035275
 MeshRenderer:
@@ -45591,8 +45350,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 447131740}
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5553322605109941407
 GameObject:
@@ -45890,8 +45649,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1252172312}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5689463082695878899
 MeshFilter:
@@ -46044,17 +45803,14 @@ MonoBehaviour:
   currentBlob: {fileID: 5797090937017731786}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &5797090937017731788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46430,17 +46186,14 @@ MonoBehaviour:
   currentBlob: {fileID: 5928341570234464952}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &5928341570234464954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47270,17 +47023,14 @@ MonoBehaviour:
   currentBlob: {fileID: 5797090937017731786}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6185237967793097662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47494,17 +47244,14 @@ MonoBehaviour:
   currentBlob: {fileID: 6279592991573452245}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6279592991573452247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48005,17 +47752,14 @@ MonoBehaviour:
   currentBlob: {fileID: 329033758064419037}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6449062241171710476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48257,8 +48001,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1961736938}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6523120926934218732
 MonoBehaviour:
@@ -48282,17 +48026,14 @@ MonoBehaviour:
   currentBlob: {fileID: 2919070601009053728}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6523120926934218733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49228,8 +48969,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2036513734}
-  m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6997339527546471009
 MonoBehaviour:
@@ -49253,17 +48994,14 @@ MonoBehaviour:
   currentBlob: {fileID: 4367016736511221742}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6997339527546471010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49687,17 +49425,14 @@ MonoBehaviour:
   currentBlob: {fileID: 3956201632013005168}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &7111103180349207553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49998,8 +49733,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1317120956}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7205355739880056531
 MeshRenderer:
@@ -50134,17 +49869,14 @@ MonoBehaviour:
   currentBlob: {fileID: 7219891746668596578}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &7219891746668596580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50650,8 +50382,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2037607933}
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7601494322426247562
 MeshRenderer:
@@ -50810,17 +50542,14 @@ MonoBehaviour:
   currentBlob: {fileID: 7616010628676468265}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &7616010628676468267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51904,17 +51633,14 @@ MonoBehaviour:
   currentBlob: {fileID: 2493278267472449765}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8056509588249973728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52922,17 +52648,14 @@ MonoBehaviour:
   currentBlob: {fileID: 8459729338362939914}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8459729338362939916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53184,17 +52907,14 @@ MonoBehaviour:
   currentBlob: {fileID: 8566521780095263941}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8566521780095263943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54558,17 +54278,14 @@ MonoBehaviour:
   currentBlob: {fileID: 4700661321449998952}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8860709213711671922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54703,17 +54420,14 @@ MonoBehaviour:
   currentBlob: {fileID: 2414180224998396603}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8890754228180402293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54907,8 +54621,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1582797877}
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8935094001922161935
 MonoBehaviour:
@@ -54932,17 +54646,14 @@ MonoBehaviour:
   currentBlob: {fileID: 4400097220944170464}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8935094001922161936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55171,17 +54882,14 @@ MonoBehaviour:
   currentBlob: {fileID: 6438782530040869959}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8955926878618505411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55241,8 +54949,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 875085671}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8962604699181631460
 MonoBehaviour:
@@ -55266,17 +54974,14 @@ MonoBehaviour:
   currentBlob: {fileID: 1873440893761147395}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8962604699181631461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55611,17 +55316,14 @@ MonoBehaviour:
   currentBlob: {fileID: 1868129243209631684}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9051218993750058671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55825,8 +55527,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 270458713}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9099763631322248915
 MonoBehaviour:
@@ -55850,17 +55552,14 @@ MonoBehaviour:
   currentBlob: {fileID: 1689242246989011652}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9099763631322248916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56009,8 +55708,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 580589834}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 989596007}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9121778923504011840
 MonoBehaviour:
@@ -56034,17 +55733,14 @@ MonoBehaviour:
   currentBlob: {fileID: 8627807629053627607}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9121778923504011841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56240,17 +55936,14 @@ MonoBehaviour:
   currentBlob: {fileID: 6808018084406286512}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
-  logic: {fileID: 250385955}
+  logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
-  offset2: {x: -0.9, y: 0.2, z: 0}
-  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
-  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
-  first: 1
+  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9175119680161557427
 MonoBehaviour:
   m_ObjectHideFlags: 0

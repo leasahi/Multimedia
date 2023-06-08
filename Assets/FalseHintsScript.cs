@@ -8,12 +8,14 @@ public class FalseHintsScript : MonoBehaviour
     public Vector3[] positions;
     private List<Vector3> usedPositions = new List<Vector3>();
     public LogicScript logic;
-    private int oldFriendCounterr = 0;
+    public FriendCountScript friend1;
+    public FriendCountScript friend2;
+    private int oldFriendCounter = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        oldFriendCounterr = logic.friendCounter;
+        oldFriendCounter = friend1.friends1 + friend2.friends2;
 
         int randomHint = Random.Range(0, allFalseHints.Length);
         int randomPosition = Random.Range(0, positions.Length);
@@ -31,20 +33,27 @@ public class FalseHintsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (logic.friendCounter > oldFriendCounterr)
+        if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
         {
-
-            int randomHints = Random.Range(0, allFalseHints.Length);
-            int randomPosition = Random.Range(0, positions.Length);
-
-            if (!usedPositions.Contains(positions[randomPosition]))
-            {
-                allFalseHints[randomHints].transform.position = positions[randomPosition];
-                allFalseHints[randomHints].SetActive(true);
-                usedPositions.Add(positions[randomPosition]);
-                Debug.Log("Hint position: " + allFalseHints[randomHints].transform.position);
-                oldFriendCounterr = logic.friendCounter;
-            }
+            StartCoroutine(Waiter());
         }
+    }
+
+    private IEnumerator Waiter()
+    {
+
+        yield return new WaitForSecondsRealtime(30);
+        int randomHints = Random.Range(0, allFalseHints.Length);
+        int randomPosition = Random.Range(0, positions.Length);
+
+        if (!usedPositions.Contains(positions[randomPosition]))
+        {
+            allFalseHints[randomHints].transform.position = positions[randomPosition];
+            allFalseHints[randomHints].SetActive(true);
+            usedPositions.Add(positions[randomPosition]);
+            Debug.Log("Hint position: " + allFalseHints[randomHints].transform.position);
+            oldFriendCounter = friend1.friends1 + friend2.friends2;
+        }
+
     }
 }
