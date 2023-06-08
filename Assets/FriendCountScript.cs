@@ -9,6 +9,9 @@ public class FriendCountScript : MonoBehaviour
     public int friends1;
     public int friends2;
 
+    public int followingFriends1;
+    public int followingFriends2;
+
     public Text friends2Text;
     public Text friends1Text;
 
@@ -18,6 +21,9 @@ public class FriendCountScript : MonoBehaviour
     {
         friends1 = 0;
         friends2 = 0;
+
+        followingFriends1 = 0;
+        followingFriends2 = 0;
 
     }
 

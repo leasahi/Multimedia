@@ -29,14 +29,21 @@ public class CollisionScript : MonoBehaviour
 
 
 
-    Vector3 temp = new Vector3(7.0f, 0, 0);
+    Vector3 offset1 = new Vector3(0.9f, 0.2f, 0.0f);
+    public Vector3 offset2 = new Vector3(-0.9f, 0.2f, 0.0f);
+    public int currentBlobs = 0;
+
     float distance = 0.75f;
 
     public FriendCountScript friend1;
     public FriendCountScript friend2;
 
+    public AllBlobsScript allBlobsScript;
+
     public bool counted = false;
     public int collectedBlobs = 0;
+
+    public bool first = true;
 
 
     // Start is called before the first frame update
@@ -45,50 +52,65 @@ public class CollisionScript : MonoBehaviour
 
     }
 
-    //https://docs.unity.cn/ScriptReference/Bounds.Contains.html for bounds 
-    //think we would need an invisible plane below the house to check four collision or something
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(" alle parents: " + this.transform.parent);
+        Debug.Log(this.transform.parent == player1.transform);
 
-        if (isCollided1 && bS.invited)
+        if (isCollided1 && bS.invited1)
         {
-            //player.transform.SetParent(this.transform);
-            if (!counted)
+            Debug.Log(" in if 1");
+            if (bS.invited2)
             {
-                //friend1.friends1 += 1;
-                counted = true;
-                collectedBlobs += 1;
+                Debug.Log(" in if 1.2");
+
+                bS.invited2 = false;
             }
-            this.transform.SetParent(player1.transform);
-            this.transform.position = player1.transform.position;
+
+            //this.transform.position = player1.transform.position;
             //not yet correct, trying to figure out the maths
-            this.transform.position -= player1.transform.forward * (distance * friend1.friends1);
+            //this.transform.position -= player1.transform.forward * (distance * friend1.friends1);
+
+            Vector3 targetPosition = player1.transform.position;
+            this.transform.position = targetPosition + offset1;
             this.transform.LookAt(p1);
-
-
         }
-        else if (isCollided2 && bS.invited)
+        if (isCollided2 && bS.invited2)
         {
-            if (!counted)
+            Debug.Log(" in if 1");
+
+            if (bS.invited1)
             {
-                //friend2.friends2 += 1;
-                counted = true;
-                collectedBlobs += 1;
+                Debug.Log(" in if 1.2");
+
+                bS.invited1 = false;
             }
-            this.transform.SetParent(player2.transform);
-            //Vector3 bar = player2.transform.position;
-            this.transform.position = player2.transform.position;
-            this.transform.position -= player2.transform.forward * (distance * friend2.friends2);
+
+
+            /*if (this.transform.parent == player1.transform)
+            {
+                Debug.Log("in parent drin von 2");
+                this.transform.SetParent(null);
+                this.transform.SetParent(player2.transform);
+            }
+            else
+            {
+                this.transform.SetParent(player2.transform);
+            }
+            */
+
+            Vector3 targetPosition = player2.transform.position;
+            this.transform.position = targetPosition + offset1;
             this.transform.LookAt(p2);
-
+            //Vector3 bar = player2.transform.position;
+            /*this.transform.position = player2.transform.position;
+            this.transform.position -= player2.transform.forward * (distance * friend2.friends2);
+            this.transform.LookAt(p2);*/
 
         }
 
-        else
-        {
-            this.transform.SetParent(null);
-        }
+        
     }
 
     private void OnCollisionEnter(Collision other)
@@ -96,11 +118,13 @@ public class CollisionScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player1"))
         {
             isCollided1 = true;
+
         }
 
         if (other.gameObject.CompareTag("Player2"))
         {
             isCollided2 = true;
+            
         }
 
         
@@ -117,6 +141,8 @@ public class CollisionScript : MonoBehaviour
             isHome1 = true;
             friend1.friends1 += 1;
             collectedBlobs += 1;
+            //wenn zu hause, ein blob weniger dabei
+            friend1.followingFriends1 -= 1;
         }
 
         if (isCollided2 && collision == home2.GetComponent<Collider>())

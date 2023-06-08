@@ -17,26 +17,32 @@ public class AllBlobsScript : MonoBehaviour
     public LogicScript logic;
     public FriendCountScript friend1;
     public FriendCountScript friend2;
+    public bool multipleBlobs1 = false;
+    public bool multipleBlobs2 = false;
     public int oldFriendCounter = 0;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        //BlobScript blob = allBlobs[0].GetComponent<BlobScript>();
         oldFriendCounter = friend1.friends1 + friend2.friends2;
 
         //int randomBlob = Random.Range(0, allBlobs.Length);
-        int randomPosition = Random.Range(0, positions.Length-1);
-
+        int randomPosition = Random.Range(0, 9);
         int randomBlobNew = Random.Range(0, allBlobsNew.Count-1);
+        int randomPosition2 = Random.Range(10, 20);
+        int randomBlobNew2 = Random.Range(0, allBlobsNew.Count - 1);
+        int randomPosition3 = Random.Range(20, positions.Length - 1);
+        int randomBlobNew3 = Random.Range(0, allBlobsNew.Count - 1);
 
-        Debug.Log("Listenlänge: " + allBlobsNew.Count);
-        allBlobsNew[randomBlobNew].transform.position = positions[randomPosition];
+        NewBlob(randomBlobNew, positions[randomPosition]);
+        NewBlob(randomBlobNew2, positions[randomPosition2]);
+        NewBlob(randomBlobNew3, positions[randomPosition3]);
+
+        /*allBlobsNew[randomBlobNew].transform.position = positions[randomPosition];
         allBlobsNew[randomBlobNew].SetActive(true);
-        Debug.Log("aktueller Blob: " + allBlobsNew[randomBlobNew]);
-        allBlobsNew.Remove(allBlobsNew[randomBlobNew]);
-        Debug.Log("nachdem gelöscht Blob: " + allBlobsNew[randomBlobNew]);
-        Debug.Log("Liste nach löschen: " + allBlobsNew.Count);
+        allBlobsNew.Remove(allBlobsNew[randomBlobNew]);*/
 
         //usedPositions.Add(positions[randomPosition]);
         //usedBlobs.Add(allBlobs[randomBlob]);
@@ -62,6 +68,15 @@ public class AllBlobsScript : MonoBehaviour
             NewBlob(randomBlobNew, positions[randomPosition]);
             }
 
+        }
+        if(friend1.followingFriends1 == 1)
+        {
+            multipleBlobs1 = true;
+        }
+
+        if (friend2.followingFriends2 == 1)
+        {
+            multipleBlobs2 = true;
         }
     }
 

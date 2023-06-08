@@ -424,7 +424,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e7e3b50e95c6f4bb5ab28cd5d980dbbb, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e7e3b50e95c6f4bb5ab28cd5d980dbbb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1195,10 +1195,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &90935291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,7 +1217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &90935292
@@ -1935,10 +1940,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 0}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &173539321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,7 +1962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &173539322
@@ -2592,7 +2602,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &250385957
 MonoBehaviour:
@@ -3404,7 +3414,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341685536 stripped
 GameObject:
@@ -3895,7 +3905,7 @@ RectTransform:
   - {fileID: 953504131}
   - {fileID: 461596892}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8337,7 +8347,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 707922e767c9e4c2cb389a2413e2d099, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 707922e767c9e4c2cb389a2413e2d099, type: 3}
       propertyPath: m_LocalScale.x
@@ -8429,7 +8439,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e1cb6181117245409c933ac929028b4, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e1cb6181117245409c933ac929028b4, type: 3}
       propertyPath: m_LocalScale.x
@@ -13451,7 +13461,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &739145183
 MeshCollider:
@@ -13500,7 +13510,7 @@ Transform:
   - {fileID: 1230362296}
   - {fileID: 35588502}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &740916352
 MonoBehaviour:
@@ -14834,7 +14844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
       propertyPath: m_LocalScale.x
@@ -17619,6 +17629,8 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  multipleBlobs1: 0
+  multipleBlobs2: 0
   oldFriendCounter: 0
 --- !u!4 &989596007
 Transform:
@@ -17636,34 +17648,8 @@ Transform:
   - {fileID: 173539326}
   - {fileID: 90935296}
   - {fileID: 1976223314}
-  - {fileID: 5520064288959868264}
-  - {fileID: 5686228087922720133}
-  - {fileID: 504720829020987534}
-  - {fileID: 6523120926934218731}
-  - {fileID: 79834553235774596}
-  - {fileID: 879954496084032631}
-  - {fileID: 9099763631322248914}
-  - {fileID: 4206928369076459488}
-  - {fileID: 3682801650002235083}
-  - {fileID: 7186666634689865458}
-  - {fileID: 8962604699181631459}
-  - {fileID: 3714526769281519247}
-  - {fileID: 194944941842041764}
-  - {fileID: 9121778923504011839}
-  - {fileID: 1446625763974261940}
-  - {fileID: 297652110138602437}
-  - {fileID: 8935094001922161934}
-  - {fileID: 2079627050868573598}
-  - {fileID: 4511939429038389300}
-  - {fileID: 2523339002966635677}
-  - {fileID: 5535091182530797825}
-  - {fileID: 742359816890532885}
-  - {fileID: 3364975886180351426}
-  - {fileID: 7567697128156422006}
-  - {fileID: 4069020699681425777}
-  - {fileID: 6997339527546471008}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &989625537 stripped
 GameObject:
@@ -19350,7 +19336,7 @@ Transform:
   - {fileID: 928117632}
   - {fileID: 606586382}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 301, z: 0}
 --- !u!114 &1159009623
 MonoBehaviour:
@@ -19366,6 +19352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   friends1: 0
   friends2: 0
+  followingFriends1: 0
+  followingFriends2: 0
   friends2Text: {fileID: 527333457}
   friends1Text: {fileID: 816188667}
 --- !u!136 &1159009624
@@ -20795,7 +20783,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 76e230f20ebad4a159ffb102208e1fe8, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 76e230f20ebad4a159ffb102208e1fe8, type: 3}
       propertyPath: m_LocalScale.x
@@ -21872,7 +21860,7 @@ Transform:
   - {fileID: 1117095544}
   - {fileID: 292626142}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1426750230
 MonoBehaviour:
@@ -26720,7 +26708,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1437731558
 GameObject:
@@ -26795,7 +26783,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1441651304
 GameObject:
@@ -28789,7 +28777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &1651824290
@@ -28850,10 +28839,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!64 &1652271902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29172,7 +29165,7 @@ Transform:
   - {fileID: 866039776}
   - {fileID: 3323071}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687803943 stripped
 GameObject:
@@ -29330,7 +29323,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 50fdc179ef47042fc92dd5747c8c84a4, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50fdc179ef47042fc92dd5747c8c84a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -29941,7 +29934,7 @@ Transform:
   - {fileID: 1920896631}
   - {fileID: 728164293}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1715106752
 MeshCollider:
@@ -30338,7 +30331,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1757894204
 MeshCollider:
@@ -32361,10 +32354,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 0}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &1976223309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32379,7 +32376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &1976223310
@@ -32620,7 +32618,7 @@ Transform:
   - {fileID: 500228584}
   - {fileID: 142338979}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: -1330.7, z: 0}
 --- !u!136 &2004150777
 CapsuleCollider:
@@ -32687,6 +32685,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   friends1: 0
   friends2: 0
+  followingFriends1: 0
+  followingFriends2: 0
   friends2Text: {fileID: 1608309911}
   friends1Text: {fileID: 816188667}
 --- !u!136 &2004150781
@@ -34107,8 +34107,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1898470262}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &87335602331759365
 MeshRenderer:
@@ -34521,8 +34521,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1074782043}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 16
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &206154416300941015
 Transform:
@@ -34610,8 +34610,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1730512451}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 19
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &297679679764713685
 MeshFilter:
@@ -34977,8 +34977,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 317673268}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &515001726892651028
 MeshFilter:
@@ -35296,7 +35296,7 @@ Transform:
   - {fileID: 2019760747}
   - {fileID: 1393248202}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543803498380652402
 GameObject:
@@ -35767,8 +35767,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 541335999}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 25
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &761663145852655852
 MeshFilter:
@@ -35954,8 +35954,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1400992404}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 9
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &881563655721054828
 MeshFilter:
@@ -37080,8 +37080,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 895571120}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 18
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500241230653188302
 GameObject:
@@ -38371,8 +38371,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1910298173}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 21
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2095248579898037738
 Transform:
@@ -39114,8 +39114,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2019046015}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 23
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2524174357882124690
 MeshFilter:
@@ -40702,8 +40702,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1313395086}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 26
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3368018335332706588
 MeshRenderer:
@@ -41384,8 +41384,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1883920447}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 12
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3703959526313735309
 Transform:
@@ -41430,8 +41430,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 190011024}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 15
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3728527394339636612
 Transform:
@@ -41504,10 +41504,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &3755974043173854995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41522,7 +41526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &3755974043173854996
@@ -41622,10 +41627,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &3756497675373064519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41640,7 +41649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &3756497675373064520
@@ -42353,8 +42363,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 875679009}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 28
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4074494968556785449
 GameObject:
@@ -42465,10 +42475,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &4132371546481140167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42483,7 +42497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &4132371546481140168
@@ -42672,8 +42687,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1631362967}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 11
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4208902426544904650
 GameObject:
@@ -42845,10 +42860,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &4288405936586614857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42863,7 +42882,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &4288405936586614858
@@ -43314,8 +43334,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1888763970}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 22
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4519817739042672552
 MeshFilter:
@@ -45461,8 +45481,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1497912301}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 4
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5523939698901035275
 MeshRenderer:
@@ -45571,8 +45591,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 447131740}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 24
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5553322605109941407
 GameObject:
@@ -45870,8 +45890,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1252172312}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 5
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5689463082695878899
 MeshFilter:
@@ -46027,10 +46047,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &5797090937017731788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46045,7 +46069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &5797090937017731789
@@ -46408,10 +46433,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &5928341570234464954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46426,7 +46455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &5928341570234464955
@@ -47243,10 +47273,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &6185237967793097662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47261,7 +47295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &6185237967793097663
@@ -47462,10 +47497,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &6279592991573452247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47480,7 +47519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &6279592991573452248
@@ -47968,10 +48008,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &6449062241171710476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47986,7 +48030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &6449062241171710477
@@ -48212,8 +48257,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1961736938}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 7
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6523120926934218732
 MonoBehaviour:
@@ -48240,10 +48285,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &6523120926934218733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48258,7 +48307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &6523120926934218734
@@ -49178,8 +49228,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2036513734}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 29
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6997339527546471009
 MonoBehaviour:
@@ -49206,10 +49256,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &6997339527546471010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49224,7 +49278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &6997339527546471011
@@ -49635,10 +49690,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &7111103180349207553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49653,7 +49712,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &7111103180349207554
@@ -49938,8 +49998,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1317120956}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 13
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7205355739880056531
 MeshRenderer:
@@ -50077,10 +50137,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &7219891746668596580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50095,7 +50159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &7219891746668596581
@@ -50585,8 +50650,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2037607933}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 27
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7601494322426247562
 MeshRenderer:
@@ -50748,10 +50813,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &7616010628676468267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50766,7 +50835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &7616010628676468268
@@ -51837,10 +51907,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8056509588249973728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51855,7 +51929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8056509588249973729
@@ -52850,10 +52925,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8459729338362939916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52868,7 +52947,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8459729338362939917
@@ -53107,10 +53187,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8566521780095263943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53125,7 +53209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8566521780095263944
@@ -54476,10 +54561,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8860709213711671922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54494,7 +54583,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8860709213711671923
@@ -54616,10 +54706,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8890754228180402293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54634,7 +54728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8890754228180402294
@@ -54812,8 +54907,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1582797877}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 20
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8935094001922161935
 MonoBehaviour:
@@ -54840,10 +54935,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8935094001922161936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54858,7 +54957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8935094001922161937
@@ -55074,10 +55174,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8955926878618505411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55092,7 +55196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8955926878618505412
@@ -55136,8 +55241,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 875085671}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 14
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8962604699181631460
 MonoBehaviour:
@@ -55164,10 +55269,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &8962604699181631461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55182,7 +55291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &8962604699181631462
@@ -55504,10 +55614,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &9051218993750058671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55522,7 +55636,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &9051218993750058672
@@ -55710,8 +55825,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 270458713}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 10
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9099763631322248915
 MonoBehaviour:
@@ -55738,10 +55853,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &9099763631322248916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55756,7 +55875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &9099763631322248917
@@ -55889,8 +56009,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 580589834}
-  m_Father: {fileID: 989596007}
-  m_RootOrder: 17
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &9121778923504011840
 MonoBehaviour:
@@ -55917,10 +56037,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &9121778923504011841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55935,7 +56059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &9121778923504011842
@@ -56118,10 +56243,14 @@ MonoBehaviour:
   logic: {fileID: 250385955}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  offset2: {x: -0.9, y: 0.2, z: 0}
+  currentBlobs: 0
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
+  allBlobsScript: {fileID: 989596006}
   counted: 0
   collectedBlobs: 0
+  first: 1
 --- !u!114 &9175119680161557427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56136,7 +56265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logic: {fileID: 250385955}
   collided: 0
-  invited: 0
+  invited1: 0
+  invited2: 0
   isCollided1: 0
   isCollided2: 0
 --- !u!136 &9175119680161557428

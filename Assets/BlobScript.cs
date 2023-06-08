@@ -6,7 +6,9 @@ public class BlobScript : MonoBehaviour
 {
     public LogicScript logic;
     public bool collided = false;
-    public bool invited = false;
+    public bool invited1 = false;
+    public bool invited2 = false;
+
 
 
     public bool isCollided1 = false;
@@ -22,12 +24,12 @@ public class BlobScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!invited && isCollided1 && Input.GetKey(KeyCode.X))
+        if (!invited1 && isCollided1 && Input.GetKey(KeyCode.X))
         {
-            invited = true;
-        } else if (!invited && isCollided2 && Input.GetKey(KeyCode.L))
+            invited1 = true;
+        } else if (!invited2 && isCollided2 && Input.GetKey(KeyCode.L))
         {
-            invited = true;
+            invited2 = true;
 
         }
 
