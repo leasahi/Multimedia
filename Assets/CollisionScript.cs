@@ -29,7 +29,7 @@ public class CollisionScript : MonoBehaviour
 
     public bool counted = false;
     public int collectedBlobs = 0;
-     Vector3 offset1 = new Vector3(0.8199f, 0.119f, 0);
+     Vector3 offset1 = new Vector3(0.8199f, 0.13f, 0);
      Vector3 offset2 = new Vector3(0.93f, 0.33f, 0.0f);
 
 
@@ -71,14 +71,37 @@ public class CollisionScript : MonoBehaviour
                 this.transform.SetParent(null);
                 this.transform.SetParent(player1.transform);
                 this.transform.position = player1.transform.position + offset1;
-                this.transform.LookAt(p1);
+
+                // Berechne die Richtung vom Item zum Player
+                Vector3 direction = player1.transform.position - transform.position;
+
+                // Richte das Item in Richtung des Players aus
+                transform.LookAt(player1.transform);
+
+                // Drehe das Item um 180 Grad, wenn es in die entgegengesetzte Richtung zeigt
+                if (Vector3.Dot(transform.forward, direction) < 0)
+                {
+                    transform.Rotate(0f, 180f, 0f);
+                }
+                //this.transform.LookAt(p1);
 
             }
             else
             {
                 this.transform.SetParent(player1.transform);
                 this.transform.position = player1.transform.position + offset1;
-                this.transform.LookAt(p1);
+                // Berechne die Richtung vom Item zum Player
+                Vector3 direction = player1.transform.position - transform.position;
+
+                // Richte das Item in Richtung des Players aus
+                transform.LookAt(player1.transform);
+
+                // Drehe das Item um 180 Grad, wenn es in die entgegengesetzte Richtung zeigt
+                if (Vector3.Dot(transform.forward, direction) < 0)
+                {
+                    transform.Rotate(0f, 180f, 0f);
+                }
+                //this.transform.LookAt(p1);
             }
 
         }
@@ -132,7 +155,7 @@ public class CollisionScript : MonoBehaviour
         }
 
 
-        if (isCollided1 && invited2 && collision == home1.GetComponent<Collider>())
+        if (isCollided1 && invited1 && collision == home1.GetComponent<Collider>())
         {
             isCollided1 = false;
             invited1 = false;

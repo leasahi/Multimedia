@@ -1187,6 +1187,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 90935291}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 90935289}
@@ -1199,7 +1201,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &90935291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1929,6 +1930,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 173539321}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 173539319}
@@ -1941,7 +1944,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &173539321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4772,7 +4774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e76f76646a4146aea0012ac911de6bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.287
+      value: -1.301
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9e76f76646a4146aea0012ac911de6bc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28602,6 +28604,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 1651824289}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1651824288}
@@ -28614,7 +28618,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!64 &1652271902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -32123,6 +32126,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 1976223309}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1976223307}
@@ -32135,7 +32140,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &1976223309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41267,6 +41271,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 3755974043173854995}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 517600316657586196}
@@ -41279,7 +41285,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &3755974043173854995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41387,6 +41392,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 3756497675373064519}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1315845558067813922}
@@ -41399,7 +41406,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &3756497675373064519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42232,6 +42238,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 4132371546481140167}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1398636637041345119}
@@ -42244,7 +42252,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &4132371546481140167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42614,6 +42621,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 4288405936586614857}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4288405936586614855}
@@ -42626,7 +42635,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &4288405936586614857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45234,7 +45242,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329033758064419037}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10.46681, y: 10.46681, z: 10.46681}
   m_ConstrainProportionsScale: 1
@@ -45242,7 +45250,7 @@ Transform:
   - {fileID: 1497912301}
   m_Father: {fileID: 989596007}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &5523939698901035275
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45798,6 +45806,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 5797090937017731788}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 5797090937017731786}
@@ -45810,7 +45820,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &5797090937017731788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46181,6 +46190,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 5928341570234464954}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 5928341570234464952}
@@ -46193,7 +46204,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &5928341570234464954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47018,6 +47028,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 6185237967793097662}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 5797090937017731786}
@@ -47030,7 +47042,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6185237967793097662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47239,6 +47250,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 6279592991573452247}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 6279592991573452245}
@@ -47251,7 +47264,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6279592991573452247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47747,6 +47759,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 6449062241171710476}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 329033758064419037}
@@ -47759,7 +47773,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6449062241171710476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48021,6 +48034,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 6523120926934218733}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 2919070601009053728}
@@ -48033,7 +48048,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6523120926934218733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48989,6 +49003,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 6997339527546471010}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4367016736511221742}
@@ -49001,7 +49017,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &6997339527546471010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49420,6 +49435,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 90935291}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 3956201632013005168}
@@ -49432,7 +49449,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &7111103180349207553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49864,6 +49880,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 7219891746668596580}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 7219891746668596578}
@@ -49876,7 +49894,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &7219891746668596580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50537,6 +50554,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 7616010628676468267}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 7616010628676468265}
@@ -50549,7 +50568,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &7616010628676468267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51628,6 +51646,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8056509588249973728}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 2493278267472449765}
@@ -51640,7 +51660,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8056509588249973728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52643,6 +52662,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8459729338362939916}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 8459729338362939914}
@@ -52655,7 +52676,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8459729338362939916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52902,6 +52922,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8566521780095263943}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 8566521780095263941}
@@ -52914,7 +52936,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8566521780095263943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54273,6 +54294,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8860709213711671922}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4700661321449998952}
@@ -54285,7 +54308,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8860709213711671922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54415,6 +54437,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8890754228180402293}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 2414180224998396603}
@@ -54427,7 +54451,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8890754228180402293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54641,6 +54664,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8935094001922161936}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4400097220944170464}
@@ -54653,7 +54678,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8935094001922161936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54877,6 +54901,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8955926878618505411}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 6438782530040869959}
@@ -54889,7 +54915,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8955926878618505411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54969,6 +54994,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 8962604699181631461}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1873440893761147395}
@@ -54981,7 +55008,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &8962604699181631461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55311,6 +55337,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 9051218993750058671}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1868129243209631684}
@@ -55323,7 +55351,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9051218993750058671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55547,6 +55574,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 9099763631322248916}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1689242246989011652}
@@ -55559,7 +55588,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9099763631322248916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55728,6 +55756,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 9121778923504011841}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 8627807629053627607}
@@ -55740,7 +55770,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9121778923504011841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55931,6 +55960,8 @@ MonoBehaviour:
   isHome1: 1
   isHome2: 1
   bS: {fileID: 9175119680161557427}
+  invited1: 0
+  invited2: 0
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 6808018084406286512}
@@ -55943,7 +55974,6 @@ MonoBehaviour:
   friend2: {fileID: 1159009623}
   counted: 0
   collectedBlobs: 0
-  offset1: {x: 0.9, y: 0.2, z: 0}
 --- !u!114 &9175119680161557427
 MonoBehaviour:
   m_ObjectHideFlags: 0
