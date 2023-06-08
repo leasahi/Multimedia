@@ -18,7 +18,8 @@ public class SunsetManager : MonoBehaviour
         }
         if (Application.isPlaying)
         {
-            TimeOfDay += Time.deltaTime*0.10f;
+            TimeOfDay += Time.deltaTime*0.0083f;
+            //TimeOfDay += Time.deltaTime;
             TimeOfDay %= 20;
             UpdateLighting(TimeOfDay / 20f);
         }

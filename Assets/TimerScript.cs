@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-    public float TimeLeft;
+     float TimeLeft = 1080;
     public bool TimerOn = false;
     public LogicScript logic;
     public GameObject Timer;
@@ -26,6 +26,7 @@ public class TimerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("time: " + TimeLeft);
         //if (logic.gameOverScreen.activeSelf)
         //{Timer.SetActive(false);}
 

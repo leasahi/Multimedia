@@ -41,8 +41,8 @@ public class FalseHintsScript : MonoBehaviour
 
     private IEnumerator Waiter()
     {
-
-        yield return new WaitForSecondsRealtime(30);
+        oldFriendCounter = friend1.friends1 + friend2.friends2;
+        yield return new WaitForSecondsRealtime(10);
         int randomHints = Random.Range(0, allFalseHints.Length);
         int randomPosition = Random.Range(0, positions.Length);
 
