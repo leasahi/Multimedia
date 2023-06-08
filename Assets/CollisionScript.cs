@@ -17,20 +17,23 @@ public class CollisionScript : MonoBehaviour
     public GameObject player1;
     public GameObject player2;
     public GameObject currentBlob;
+    public GameObject currentBlobPointer;
     public GameObject home1;
     public GameObject home2;
     public LogicScript logic;
     public Transform p1;
     public Transform p2;
     Vector3 temp = new Vector3(7.0f, 0, 0);
-    float distance = 0.75f;
+    public float distance = 0.75f;
     public FriendCountScript friend1;
     public FriendCountScript friend2;
 
     public bool counted = false;
     public int collectedBlobs = 0;
-     Vector3 offset1 = new Vector3(0.8199f, 0.13f, 0);
-     Vector3 offset2 = new Vector3(0.93f, 0.33f, 0.0f);
+    //public Vector3 offset1 = new Vector3(0.8199f, 0.13f, 0);
+     Vector3 offset1 = new Vector3(0.0f, 0.13f, 0);
+    //Vector3 offset2 = new Vector3(0.93f, 0.33f, 0.0f);
+     Vector3 offset2 = new Vector3(0.0f, 0.34f, 0.0f);
 
 
     // Start is called before the first frame update
@@ -64,44 +67,39 @@ public class CollisionScript : MonoBehaviour
 
             if (this.transform.parent == player2.transform)
             {
+                if(currentBlobPointer != null)
+                {
+                    currentBlobPointer.SetActive(false);
+                }
+                
                 Debug.Log("im P1 klauen");
                 invited2 = false;
                 isCollided2 = false;
 
                 this.transform.SetParent(null);
                 this.transform.SetParent(player1.transform);
-                this.transform.position = player1.transform.position + offset1;
-
-                // Berechne die Richtung vom Item zum Player
-                Vector3 direction = player1.transform.position - transform.position;
-
-                // Richte das Item in Richtung des Players aus
+                //this.transform.position = player1.transform.position + offset1;
+                this.transform.position = player1.transform.position;
+                this.transform.position -= player1.transform.forward * distance;
+                this.transform.position += offset1;
                 transform.LookAt(player1.transform);
-
-                // Drehe das Item um 180 Grad, wenn es in die entgegengesetzte Richtung zeigt
-                if (Vector3.Dot(transform.forward, direction) < 0)
-                {
-                    transform.Rotate(0f, 180f, 0f);
-                }
-                //this.transform.LookAt(p1);
-
+                transform.Rotate(0f, 180f, 0f);
+                
             }
             else
             {
-                this.transform.SetParent(player1.transform);
-                this.transform.position = player1.transform.position + offset1;
-                // Berechne die Richtung vom Item zum Player
-                Vector3 direction = player1.transform.position - transform.position;
-
-                // Richte das Item in Richtung des Players aus
-                transform.LookAt(player1.transform);
-
-                // Drehe das Item um 180 Grad, wenn es in die entgegengesetzte Richtung zeigt
-                if (Vector3.Dot(transform.forward, direction) < 0)
+                if (currentBlobPointer != null)
                 {
-                    transform.Rotate(0f, 180f, 0f);
+                    currentBlobPointer.SetActive(false);
                 }
-                //this.transform.LookAt(p1);
+                this.transform.SetParent(player1.transform);
+                //this.transform.position = player1.transform.position + offset1;
+                this.transform.position = player1.transform.position;
+                this.transform.position -= player1.transform.forward * distance;
+                this.transform.position += offset1;
+                transform.LookAt(player1.transform);
+                transform.Rotate(0f, 180f, 0f);
+               
             }
 
         }
@@ -111,21 +109,36 @@ public class CollisionScript : MonoBehaviour
             
             if (this.transform.parent == player1.transform)
             {
+                if (currentBlobPointer != null)
+                {
+                    currentBlobPointer.SetActive(false);
+                }
                 Debug.Log("im P2 klauen");
                 invited1 = false;
                 isCollided1 = false;
 
                 this.transform.SetParent(null);
                 this.transform.SetParent(player2.transform);
-                this.transform.position = player2.transform.position + offset2;
+                //this.transform.position = player2.transform.position + offset2;
+                this.transform.position = player2.transform.position;
+                this.transform.position -= player2.transform.forward * distance;
+                this.transform.position += offset2;
                 this.transform.LookAt(p2);
+                transform.Rotate(0f, 180f, 0f);
 
             }
             else
             {
+                if (currentBlobPointer != null)
+                {
+                    currentBlobPointer.SetActive(false);
+                }
                 this.transform.SetParent(player2.transform);
-                this.transform.position = player2.transform.position + offset2;
+                this.transform.position = player2.transform.position;
+                this.transform.position -= player2.transform.forward * distance;
+                this.transform.position += offset2;
                 this.transform.LookAt(p2);
+                transform.Rotate(0f, 180f, 0f);
             }
         }
        

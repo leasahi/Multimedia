@@ -1192,11 +1192,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 90935289}
+  currentBlobPointer: {fileID: 0}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -1935,11 +1937,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 173539319}
+  currentBlobPointer: {fileID: 0}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 0}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -27015,7 +27019,7 @@ GameObject:
   - component: {fileID: 1497912301}
   - component: {fileID: 1497912302}
   m_Layer: 0
-  m_Name: Blob1Pointer
+  m_Name: Blob1Pointer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28609,11 +28613,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1651824288}
+  currentBlobPointer: {fileID: 0}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -32131,11 +32137,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1976223307}
+  currentBlobPointer: {fileID: 0}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -41276,11 +41284,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 517600316657586196}
+  currentBlobPointer: {fileID: 1910298172}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -41397,11 +41407,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1315845558067813922}
+  currentBlobPointer: {fileID: 0}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -42243,11 +42255,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1398636637041345119}
+  currentBlobPointer: {fileID: 190011023}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -42626,11 +42640,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4288405936586614855}
+  currentBlobPointer: {fileID: 1730512450}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -45811,11 +45827,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 5797090937017731786}
+  currentBlobPointer: {fileID: 0}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -46195,11 +46213,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 5928341570234464952}
+  currentBlobPointer: {fileID: 2019046014}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -47033,11 +47053,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 5797090937017731786}
+  currentBlobPointer: {fileID: 447131739}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -47255,11 +47277,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 6279592991573452245}
+  currentBlobPointer: {fileID: 1888763969}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -47764,11 +47788,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 329033758064419037}
+  currentBlobPointer: {fileID: 1497912300}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -48039,11 +48065,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 2919070601009053728}
+  currentBlobPointer: {fileID: 1961736937}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -49008,11 +49036,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4367016736511221742}
+  currentBlobPointer: {fileID: 2036513733}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -49440,11 +49470,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 3956201632013005168}
+  currentBlobPointer: {fileID: 317673267}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -49885,11 +49917,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 7219891746668596578}
+  currentBlobPointer: {fileID: 1313395085}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -50559,11 +50593,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 7616010628676468265}
+  currentBlobPointer: {fileID: 0}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -51651,11 +51687,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 2493278267472449765}
+  currentBlobPointer: {fileID: 1898470261}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -52667,11 +52705,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 8459729338362939914}
+  currentBlobPointer: {fileID: 1252172311}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -52927,11 +52967,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 8566521780095263941}
+  currentBlobPointer: {fileID: 1074782042}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -54299,11 +54341,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4700661321449998952}
+  currentBlobPointer: {fileID: 1317120955}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -54442,11 +54486,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 2414180224998396603}
+  currentBlobPointer: {fileID: 1631362966}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -54669,11 +54715,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 4400097220944170464}
+  currentBlobPointer: {fileID: 1582797876}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -54906,11 +54954,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 6438782530040869959}
+  currentBlobPointer: {fileID: 875679008}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -54999,11 +55049,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1873440893761147395}
+  currentBlobPointer: {fileID: 875085670}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -55342,11 +55394,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1868129243209631684}
+  currentBlobPointer: {fileID: 1883920446}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -55579,11 +55633,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 1689242246989011652}
+  currentBlobPointer: {fileID: 270458712}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -55761,11 +55817,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 8627807629053627607}
+  currentBlobPointer: {fileID: 580589833}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
@@ -55965,11 +56023,13 @@ MonoBehaviour:
   player1: {fileID: 2004150775}
   player2: {fileID: 1159009618}
   currentBlob: {fileID: 6808018084406286512}
+  currentBlobPointer: {fileID: 2037607932}
   home1: {fileID: 3444172225346849697}
   home2: {fileID: 3398426936144821777}
   logic: {fileID: 0}
   p1: {fileID: 2004150776}
   p2: {fileID: 1159009622}
+  distance: 0.75
   friend1: {fileID: 2004150780}
   friend2: {fileID: 1159009623}
   counted: 0
