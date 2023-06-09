@@ -91,7 +91,6 @@ public class LogicScript : MonoBehaviour
 
     public void restartGame()
     {
-       
         startGameScreen.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         startGameScreen.SetActive(false);
@@ -99,14 +98,11 @@ public class LogicScript : MonoBehaviour
 
     public void startGame()
     {
-          
         startGameScreen.SetActive(false);
-        
     }
 
     public void gameOver()
     {
-       
         gameOverScreen.SetActive(true);
         Timer.SetActive(false);
     }
