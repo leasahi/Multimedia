@@ -17,6 +17,8 @@ public class PlayerControllerScript : MonoBehaviour
     public bool isJumping = false;
     public bool canJump = true;
     public LogicScript logic;
+    public Animator animatorController;
+    public bool isWalking;
 
 
     Rigidbody r;
@@ -33,11 +35,16 @@ public class PlayerControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if (!logic.gamePaused) { 
+
+
+        animatorController.SetBool("isWalking", false);
+        if (!logic.gamePaused) { 
             // Move Front/Back
             Vector3 targetVelocity = Vector3.zero;
             if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.W)) || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.UpArrow)))
             {
+                animatorController.SetBool("isWalking", true);
+
                 if ((reversedWASD && playerControls == PlayerControls.WASD) || (reversedArrows && playerControls == PlayerControls.Arrows))
                 {
                     targetVelocity.z = -1;
@@ -49,6 +56,8 @@ public class PlayerControllerScript : MonoBehaviour
             }
             else if ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.S)) || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.DownArrow)))
             {
+                animatorController.SetBool("isWalking", true);
+
                 if ((reversedWASD && playerControls == PlayerControls.WASD) || (reversedArrows && playerControls == PlayerControls.Arrows))
                 {
                     targetVelocity.z = 1;
@@ -108,6 +117,8 @@ public class PlayerControllerScript : MonoBehaviour
                 || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)))
                 && canJump)
             {
+                animatorController.SetBool("isWalking", false);
+
                 isJumping = true;
                 canJump = false;
                 r.velocity = Vector3.up * jumpStrength;
@@ -125,7 +136,7 @@ public class PlayerControllerScript : MonoBehaviour
 
     private void OnTriggerExit(Collider collision)
     {
-        
+        animatorController.SetBool("isWalking", false);
         canJump = false;
     }
 
