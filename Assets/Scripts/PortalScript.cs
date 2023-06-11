@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class portalScript : MonoBehaviour
+public class PortalScript : MonoBehaviour
 {
     public GameObject player1;
     public GameObject player2;
