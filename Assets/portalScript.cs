@@ -27,6 +27,7 @@ public class portalScript : MonoBehaviour
             player1.transform.rotation = rotation;
             Debug.Log("POSITION:"+player1.transform.position);
         }
+        
         if (collided2)
         {
             player2.transform.position = position;
@@ -40,15 +41,12 @@ public class portalScript : MonoBehaviour
         if (collision == player1.GetComponent<Collider>())
         {
             collided1 = true;
-
         }
 
         if (collision == player2.GetComponent<Collider>())
         {
             collided2 = true;
-
         }
-
     }
 
     private void OnTriggerExit(Collider collision)
@@ -56,12 +54,11 @@ public class portalScript : MonoBehaviour
         if (collision == player1.GetComponent<Collider>())
         {
             collided1 = false;
-
         }
+        
         if (collision == player2.GetComponent<Collider>())
         {
             collided2 = false;
-
         }
     }
 
