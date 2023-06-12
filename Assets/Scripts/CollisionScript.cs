@@ -14,16 +14,19 @@ public class CollisionScript : MonoBehaviour
     public BlobScript bS;
     public bool invited1 = false;
     public bool invited2 = false;
+    public bool touchedWater = false;
     public GameObject player1;
     public GameObject player2;
     public GameObject currentBlob;
     public GameObject currentBlobPointer;
+    public GameObject blobQueue;
     public GameObject home1;
     public GameObject home2;
     public LogicScript logic;
     public Transform p1;
     public Transform p2;
     Vector3 temp = new Vector3(7.0f, 0, 0);
+    private Vector3 starting = new Vector3(0, 0, 0);
     public float distance = 0.75f;
     public FriendCountScript friend1;
     public FriendCountScript friend2;
@@ -38,10 +41,8 @@ public class CollisionScript : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-    }
-    //https://docs.unity.cn/ScriptReference/Bounds.Contains.html for bounds 
-    //think we would need an invisible plane below the house to check four collision or something
+    {}
+
     // Update is called once per frame
     void Update()
     {
@@ -55,16 +56,13 @@ public class CollisionScript : MonoBehaviour
         else if (!invited2 && isCollided2 && Input.GetKey(KeyCode.L))
         {
             invited2 = true;
-
         }
 
         Debug.Log("Blob: "+ currentBlob + ", & Collision parent: " + this.transform.parent);
         if (isCollided1 && invited1)
         {
             Debug.Log("im P1 IF also isCollided1 true");
-         
-
-
+            
             if (this.transform.parent == player2.transform)
             {
                 if(currentBlobPointer != null)
@@ -99,9 +97,7 @@ public class CollisionScript : MonoBehaviour
                 this.transform.position += offset1;
                 transform.LookAt(player1.transform);
                 transform.Rotate(0f, 180f, 0f);
-               
             }
-
         }
         if (isCollided2 && invited2)
         {
@@ -125,7 +121,6 @@ public class CollisionScript : MonoBehaviour
                 this.transform.position += offset2;
                 this.transform.LookAt(p2);
                 transform.Rotate(0f, 180f, 0f);
-
             }
             else
             {
@@ -141,32 +136,33 @@ public class CollisionScript : MonoBehaviour
                 transform.Rotate(0f, 180f, 0f);
             }
         }
-       
-    }
-    /*private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Player1"))
-        {
-            isCollided1 = true;
-        }
-        if (other.gameObject.CompareTag("Player2"))
-        {
-            isCollided2 = true;
-        }
 
-    }*/
+        if (touchedWater)
+        {
+            Debug.Log(blobQueue.transform);
+            this.transform.SetParent(null);
+            this.transform.SetParent(blobQueue.transform);
+            if (currentBlobPointer != null)
+            {
+                currentBlobPointer.SetActive(false);
+            }
+
+            this.transform.position = starting;
+            currentBlob.SetActive(false);
+        }
+    }
+   
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Player1"))
         {
             isCollided1 = true;
         }
-
+        
         if (collision.gameObject.CompareTag("Player2"))
         {
             isCollided2 = true;
         }
-
 
         if (isCollided1 && invited1 && collision == home1.GetComponent<Collider>())
         {
@@ -188,6 +184,14 @@ public class CollisionScript : MonoBehaviour
             friend2.friends2 += 1;
             collectedBlobs += 1;
         }
-
+        
+        if (collision.gameObject.CompareTag("Wasser"))
+        {
+            Debug.Log("Touched water");
+            //this.transform.SetParent(null);
+            //this.transform.SetParent(blobQueue.transform);
+            touchedWater = true;
+            Debug.Log("State: " + touchedWater);
+        }
     }
 }

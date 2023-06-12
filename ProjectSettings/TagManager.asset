@@ -10,6 +10,7 @@ TagManager:
   - Pilzhaus1
   - Pilzwald
   - Insel
+  - Wasser
   layers:
   - Default
   - TransparentFX
