@@ -10,14 +10,27 @@ public class LogicScript : MonoBehaviour
     public Text scoreText;
     public GameObject gameOverScreen;
     public GameObject startGameScreen;
+    public GameObject inGameUi;
     public GameObject Timer;
     public GameObject pauseIcon;
     public GameObject player1; //main camera of player 1
     public GameObject player2; //main camera of player 2
+    public GameObject playerChara1;
+    public GameObject playerChara2;
     public bool gamePaused = false;
+    public bool started = false;
 
     private void Update()
     {
+        if (!started)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                this.startGame();
+                started = true;
+            }
+        }
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (gamePaused)
@@ -98,7 +111,12 @@ public class LogicScript : MonoBehaviour
 
     public void startGame()
     {
+        Debug.Log("START");
         startGameScreen.SetActive(false);
+        playerChara1.transform.SetPositionAndRotation(new Vector3(-21,-1,-9), Quaternion.Euler(new Vector3(0,-1330,0)));
+        playerChara2.transform.SetPositionAndRotation(new Vector3(-17,-1,-11), Quaternion.Euler(new Vector3(0,301,0)));
+        inGameUi.SetActive(true);
+        this.started = true;
     }
 
     public void gameOver()

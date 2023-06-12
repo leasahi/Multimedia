@@ -17,16 +17,13 @@ public class TimerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-            TimerOn = true;
-        
-     
+        TimerOn = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("time: " + TimeLeft);
+        //Debug.Log("time: " + TimeLeft);
         //if (logic.gameOverScreen.activeSelf)
         //{Timer.SetActive(false);}
 

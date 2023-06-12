@@ -35,9 +35,8 @@ public class PlayerControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         animatorController.SetBool("isWalking", false);
+        
         if (!logic.gamePaused) { 
             // Move Front/Back
             Vector3 targetVelocity = Vector3.zero;
@@ -114,7 +113,7 @@ public class PlayerControllerScript : MonoBehaviour
             // jump
             if (!isJumping &&
                 ((playerControls == PlayerControls.WASD && Input.GetKey(KeyCode.Space))
-                || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Return)))
+                || (playerControls == PlayerControls.Arrows && Input.GetKey(KeyCode.Minus)))
                 && canJump)
             {
                 animatorController.SetBool("isWalking", false);

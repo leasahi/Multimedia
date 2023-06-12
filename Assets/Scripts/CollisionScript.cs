@@ -58,7 +58,7 @@ public class CollisionScript : MonoBehaviour
             invited2 = true;
         }
 
-        Debug.Log("Blob: "+ currentBlob + ", & Collision parent: " + this.transform.parent);
+        //Debug.Log("Blob: "+ currentBlob + ", & Collision parent: " + this.transform.parent);
         if (isCollided1 && invited1)
         {
             Debug.Log("im P1 IF also isCollided1 true");
