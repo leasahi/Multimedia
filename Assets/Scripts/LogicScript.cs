@@ -11,6 +11,8 @@ public class LogicScript : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject startGameScreen;
     public GameObject inGameUi;
+    public GameObject explanationScreen1;
+    public GameObject explanationScreen2;
     public GameObject Timer;
     public GameObject pauseIcon;
     public GameObject player1; //main camera of player 1
@@ -113,6 +115,8 @@ public class LogicScript : MonoBehaviour
     {
         Debug.Log("START");
         startGameScreen.SetActive(false);
+        explanationScreen1.SetActive(false);
+        explanationScreen2.SetActive(false);
         playerChara1.transform.SetPositionAndRotation(new Vector3(-21,-1,-9), Quaternion.Euler(new Vector3(0,-1330,0)));
         playerChara2.transform.SetPositionAndRotation(new Vector3(-17,-1,-11), Quaternion.Euler(new Vector3(0,301,0)));
         inGameUi.SetActive(true);
@@ -123,5 +127,25 @@ public class LogicScript : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         Timer.SetActive(false);
+    }
+
+    public void gameExplanation1()
+    {
+        startGameScreen.SetActive(false);
+        explanationScreen1.SetActive(true);
+    }
+    
+    public void gameExplanation2()
+    {
+        //startGameScreen.SetActive(false);
+        explanationScreen1.SetActive(false);
+        explanationScreen2.SetActive(true);
+    }
+
+    public void showStartScreen()
+    {
+        explanationScreen1.SetActive(false);
+        explanationScreen2.SetActive(false);
+        startGameScreen.SetActive(true);
     }
 }
