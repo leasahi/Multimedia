@@ -26,6 +26,7 @@ public class AllBlobsScript : MonoBehaviour
 
 
     // Start is called before the first frame update
+    //TODO: somehow create time delay because of sounds
     void Start()
     {
         //BlobScript blob = allBlobs[0].GetComponent<BlobScript>();
