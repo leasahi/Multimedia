@@ -11,9 +11,14 @@ public class FalseHintsScript : MonoBehaviour
     public FriendCountScript friend1;
     public FriendCountScript friend2;
     private int oldFriendCounter = 0;
+    private bool init = true;
 
     // Start is called before the first frame update
     void Start()
+    {
+    }
+
+    public void initHints()
     {
         oldFriendCounter = friend1.friends1 + friend2.friends2;
 
@@ -27,15 +32,23 @@ public class FalseHintsScript : MonoBehaviour
         allFalseHints[randomHint].transform.position = positions[randomPosition];
         allFalseHints[randomHint].SetActive(true);
         Debug.Log("Hint position after: " + allFalseHints[randomHint].transform.position);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
+        if (logic.started && init) {
+            Debug.Log("START INIT HINTS");
+            this.initHints();
+            init = false;
+        }
+
+        if (logic.started && !init)
         {
-            StartCoroutine(Waiter());
+            if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
+            {
+                StartCoroutine(Waiter());
+            }
         }
     }
 

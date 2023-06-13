@@ -3502,6 +3502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 1673536377}
   Preset: {fileID: 11400000, guid: 4d00b170a61434ab08a01c4d45b39ab4, type: 2}
+  logic: {fileID: 250385955}
   TimeOfDay: 7.6
 --- !u!1 &251546197
 GameObject:
@@ -11098,6 +11099,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 390314066262003064, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
+--- !u!1 &705548707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ee6b3501fff5c45b2b31dee348a5be89, type: 3}
+  m_PrefabInstance: {fileID: 1295132924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &705548709
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705548707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &708457076
 GameObject:
   m_ObjectHideFlags: 0
@@ -17298,6 +17318,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2af48182afb562a49ad0759015f855e8, type: 3}
       propertyPath: m_Name
       value: Fluss Outline
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2af48182afb562a49ad0759015f855e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2af48182afb562a49ad0759015f855e8, type: 3}
       propertyPath: m_TagString
@@ -25696,7 +25720,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -9080128132478217246, guid: ee6b3501fff5c45b2b31dee348a5be89, type: 3}
       propertyPath: m_TagString
-      value: Insel
+      value: Wasser
       objectReference: {fileID: 0}
     - target: {fileID: -9080128132478217246, guid: ee6b3501fff5c45b2b31dee348a5be89, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -37155,6 +37179,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6190635714024672160, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
+--- !u!1 &1721662300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -9080128132478217246, guid: ee6b3501fff5c45b2b31dee348a5be89, type: 3}
+  m_PrefabInstance: {fileID: 1295132924}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1721662304
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721662300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7798917533657530372, guid: ee6b3501fff5c45b2b31dee348a5be89, type: 3}
 --- !u!1 &1729393778 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1957669650022968743, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
@@ -41178,7 +41221,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: d0fdc8cd3715d6a409492a78a5c6754f, type: 3}
 --- !u!1 &2000740291 stripped
@@ -43114,6 +43157,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d0fdc8cd3715d6a409492a78a5c6754f, type: 3}
       propertyPath: m_Name
       value: Fluss Bulb Outline
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0fdc8cd3715d6a409492a78a5c6754f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0fdc8cd3715d6a409492a78a5c6754f, type: 3}
       propertyPath: m_TagString

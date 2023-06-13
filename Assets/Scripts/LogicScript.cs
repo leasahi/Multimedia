@@ -121,6 +121,7 @@ public class LogicScript : MonoBehaviour
         playerChara2.transform.SetPositionAndRotation(new Vector3(-17,-1,-11), Quaternion.Euler(new Vector3(0,301,0)));
         inGameUi.SetActive(true);
         this.started = true;
+        //this.soundsOnOff(true);
     }
 
     public void gameOver()

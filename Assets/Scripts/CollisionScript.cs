@@ -139,6 +139,7 @@ public class CollisionScript : MonoBehaviour
 
         if (touchedWater)
         {
+			Debug.Log("touched water update");
             Debug.Log(blobQueue.transform);
             this.transform.SetParent(null);
             this.transform.SetParent(blobQueue.transform);

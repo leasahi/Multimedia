@@ -18,7 +18,8 @@ public class AllBlobsScript : MonoBehaviour
     public FriendCountScript friend1;
     public FriendCountScript friend2;
     public bool multipleBlobs1 = false;
-    public bool multipleBlobs2 = false;
+	public bool multipleBlobs2 = false;
+	private bool init = true;
     public Vector3 offset1 = new Vector3(-0.9f, 0.2f, 0.0f);
     public Vector3 offset2 = new Vector3(0.9f, 0.2f, 0.0f);
     public Vector3 currentOffset;
@@ -28,8 +29,11 @@ public class AllBlobsScript : MonoBehaviour
     // Start is called before the first frame update
     //TODO: somehow create time delay because of sounds
     void Start()
-    {
-        //BlobScript blob = allBlobs[0].GetComponent<BlobScript>();
+    {}
+
+	public void initBlobs() 
+	{
+	//BlobScript blob = allBlobs[0].GetComponent<BlobScript>();
         oldFriendCounter = friend1.friends1 + friend2.friends2;
 
         //int randomBlob = Random.Range(0, allBlobs.Length);
@@ -58,43 +62,49 @@ public class AllBlobsScript : MonoBehaviour
        // allBlobs[randomBlob].transform.position = positions[randomPosition];
        // allBlobs[randomBlob].SetActive(true);
        // Debug.Log("Blob position: " + allBlobs[randomBlob].transform.position);
+	}
 
-
-    }
+	
 
     // Update is called once per frame
     void Update()
     {
-        if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
-        {
-            if (allBlobsNew.Count > 0)
-            {
-                int randomPosition = Random.Range(0, positions.Length - 1);
-            int randomBlobNew = Random.Range(0, allBlobsNew.Count - 1);
-             
-            NewBlob(randomBlobNew, positions[randomPosition]);
-            }
+		if (logic.started && init) {
+			Debug.Log("START INIT");
+			this.initBlobs();
+			init = false;
+		}
+		if (logic.started && !init) {
+			//Debug.Log("START LOGIC");
+        	if (friend1.friends1 + friend2.friends2 > oldFriendCounter)
+        	{
+            	if (allBlobsNew.Count > 0)
+            	{
+                	int randomPosition = Random.Range(0, positions.Length - 1);
+            		int randomBlobNew = Random.Range(0, allBlobsNew.Count - 1);
+            		NewBlob(randomBlobNew, positions[randomPosition]);
+            	}
+        	}
+        	if(friend1.followingFriends1 == 2)
+        	{
+            	multipleBlobs1 = true;
+            	currentOffset = offset1;
+        	}
+        	else
+        	{
+            	multipleBlobs1 = false;
+            	currentOffset = offset2;
+        	}
 
-        }
-        if(friend1.followingFriends1 == 2)
-        {
-            multipleBlobs1 = true;
-            currentOffset = offset1;
-        }
-        else
-        {
-            multipleBlobs1 = false;
-            currentOffset = offset2;
-        }
-
-        if (friend2.followingFriends2 == 2)
-        {
-            multipleBlobs2 = true;
-        }
-        else
-        {
-            multipleBlobs2 = false;
-        }
+        	if (friend2.followingFriends2 == 2)
+        	{
+            	multipleBlobs2 = true;
+        	}
+        	else
+        	{
+            	multipleBlobs2 = false;
+        	}
+		}
     }
 
     public void NewBlob(int randomBlob, Vector3 position)

@@ -7,25 +7,32 @@ public class SunsetManager : MonoBehaviour
 {
     [SerializeField] private Light DirectionalLight;
     [SerializeField] private SunsetPreset Preset;
+    public LogicScript logic;
 
     [SerializeField, Range (0,20)] private float TimeOfDay;
 
     private void Update()
     {
-        if(Preset == null)
+        //Debug.Log("LightStarted");
+        if (logic.started)
         {
-            return;
-        }
-        if (Application.isPlaying)
-        {
-            TimeOfDay += Time.deltaTime*0.0083f;
-            //TimeOfDay += Time.deltaTime;
-            TimeOfDay %= 20;
-            UpdateLighting(TimeOfDay / 20f);
-        }
-        else
-        {
-            UpdateLighting(TimeOfDay / 20f);
+            Debug.Log("Gamestarted");
+            if (Preset == null)
+            {
+                return;
+            }
+
+            if (Application.isPlaying)
+            {
+                TimeOfDay += Time.deltaTime * 0.0083f;
+                //TimeOfDay += Time.deltaTime;
+                TimeOfDay %= 20;
+                UpdateLighting(TimeOfDay / 20f);
+            }
+            else
+            {
+                UpdateLighting(TimeOfDay / 20f);
+            }
         }
     }
 
