@@ -14,6 +14,8 @@ public class FriendCountScript : MonoBehaviour
 
     public Text friends2Text;
     public Text friends1Text;
+    public bool p1HasBlob = false;
+    public bool p2HasBlob = false;
 
 
     // Start is called before the first frame update

@@ -106,6 +106,9 @@ public class LogicScript : MonoBehaviour
 
     public void restartGame()
     {
+		if (gamePaused) {
+			this.ResumeGame();
+		}
         startGameScreen.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         startGameScreen.SetActive(false);

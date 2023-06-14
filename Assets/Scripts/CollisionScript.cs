@@ -30,6 +30,10 @@ public class CollisionScript : MonoBehaviour
     public float distance = 0.75f;
     public FriendCountScript friend1;
     public FriendCountScript friend2;
+	
+	//TODO: remove this var, if we manage 2 blobs at the same time after all
+	/*public bool p1HasBlob = friend1.p1HasBlob;
+	public bool p2HasBlob = friend2.;*/
 
     public bool counted = false;
     public int collectedBlobs = 0;
@@ -49,11 +53,11 @@ public class CollisionScript : MonoBehaviour
         //invited1 = bS.invited1;
         //invited2 = bS.invited2;
 
-        if (!invited1 && isCollided1 && Input.GetKey(KeyCode.X))
+        if (!invited1 && isCollided1 && Input.GetKey(KeyCode.X) && !friend1.p1HasBlob)
         {
             invited1 = true;
         }
-        else if (!invited2 && isCollided2 && Input.GetKey(KeyCode.L))
+        else if (!invited2 && isCollided2 && Input.GetKey(KeyCode.L) && !friend2.p2HasBlob)
         {
             invited2 = true;
         }
@@ -76,6 +80,7 @@ public class CollisionScript : MonoBehaviour
 
                 this.transform.SetParent(null);
                 this.transform.SetParent(player1.transform);
+				friend1.p1HasBlob = true;
                 //this.transform.position = player1.transform.position + offset1;
                 this.transform.position = player1.transform.position;
                 this.transform.position -= player1.transform.forward * distance;
@@ -91,6 +96,7 @@ public class CollisionScript : MonoBehaviour
                     currentBlobPointer.SetActive(false);
                 }
                 this.transform.SetParent(player1.transform);
+				friend1.p1HasBlob = true;
                 //this.transform.position = player1.transform.position + offset1;
                 this.transform.position = player1.transform.position;
                 this.transform.position -= player1.transform.forward * distance;
@@ -115,6 +121,7 @@ public class CollisionScript : MonoBehaviour
 
                 this.transform.SetParent(null);
                 this.transform.SetParent(player2.transform);
+				friend2.p2HasBlob = true;
                 //this.transform.position = player2.transform.position + offset2;
                 this.transform.position = player2.transform.position;
                 this.transform.position -= player2.transform.forward * distance;
@@ -129,6 +136,7 @@ public class CollisionScript : MonoBehaviour
                     currentBlobPointer.SetActive(false);
                 }
                 this.transform.SetParent(player2.transform);
+				friend2.p2HasBlob = true;
                 this.transform.position = player2.transform.position;
                 this.transform.position -= player2.transform.forward * distance;
                 this.transform.position += offset2;
@@ -141,7 +149,16 @@ public class CollisionScript : MonoBehaviour
         {
 			Debug.Log("touched water update");
             Debug.Log(blobQueue.transform);
-            this.transform.SetParent(null);
+			if (this.transform.parent.CompareTag("Player1")) {
+				Debug.Log("PLAYER1 lost a blob");
+				friend1.p1HasBlob = false;
+			} 
+			else if (this.transform.parent.CompareTag("Player2")) 
+			{
+				Debug.Log("PLAYER2 lost a blob");
+				friend2.p2HasBlob = false;
+			}          
+			this.transform.SetParent(null);
             this.transform.SetParent(blobQueue.transform);
             if (currentBlobPointer != null)
             {
@@ -171,6 +188,7 @@ public class CollisionScript : MonoBehaviour
             invited1 = false;
             currentBlob.SetActive(false);
             isHome1 = true;
+			friend1.p1HasBlob = false;
             friend1.friends1 += 1;
 
             collectedBlobs += 1;
@@ -182,6 +200,7 @@ public class CollisionScript : MonoBehaviour
             invited2 = false;
             currentBlob.SetActive(false);
             isHome2 = true;
+			friend2.p2HasBlob = false;
             friend2.friends2 += 1;
             collectedBlobs += 1;
         }
