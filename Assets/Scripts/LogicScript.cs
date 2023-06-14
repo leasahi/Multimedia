@@ -148,6 +148,11 @@ public class LogicScript : MonoBehaviour
         videoPenguinWins.SetActive(false);
         videoPandaWins.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameOverScreenPandaWins.SetActive(false);
+        gameOverScreenPenguinWins.SetActive(false);
+        gameOverScreenNobodyWins.SetActive(false);
+        videoPenguinWins.SetActive(false);
+        videoPandaWins.SetActive(false);
         startGameScreen.SetActive(false);
     }
 
