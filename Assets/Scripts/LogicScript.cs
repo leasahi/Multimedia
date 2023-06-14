@@ -29,6 +29,7 @@ public class LogicScript : MonoBehaviour
     public bool started = false;
     public bool pandaWins = false;
     public bool penguinWins = false;
+    public bool isGameOver = false;
 
     public FriendCountScript friendsCounter1;
     public FriendCountScript friendsCounter2;
@@ -78,7 +79,7 @@ public class LogicScript : MonoBehaviour
             // Aktiviert den anderen Audio Listener
             SwitchAudioListener();
         }
-        if (Input.GetKeyDown(KeyCode.Plus))
+        if (Input.GetKeyDown(KeyCode.Z) && isGameOver)
         {
             //skippt zum start
             restartGame();
@@ -173,6 +174,7 @@ public class LogicScript : MonoBehaviour
 
     public void gameOver()
     {
+        isGameOver = true;
         if (pandaWins)
         {
             gameOverScreenPandaWins.SetActive(true);
