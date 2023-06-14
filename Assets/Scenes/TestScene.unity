@@ -481,7 +481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &20028377
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3601,6 +3601,7 @@ MonoBehaviour:
   started: 0
   pandaWins: 0
   penguinWins: 0
+  isGameOver: 0
   friendsCounter1: {fileID: 2004150780}
   friendsCounter2: {fileID: 1159009623}
 --- !u!4 &250385956
@@ -22743,7 +22744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1055826683
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36971,7 +36972,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -36982,7 +36983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press + to skip '
+  m_Text: 'Press Z to skip '
 --- !u!222 &1639433982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37099,7 +37100,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -37110,7 +37111,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press + to skip '
+  m_Text: 'Press Z to skip '
 --- !u!222 &1649811258
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -38911,7 +38912,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -38922,7 +38923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Press + to skip '
+  m_Text: 'Press Z to skip '
 --- !u!222 &1707697033
 CanvasRenderer:
   m_ObjectHideFlags: 0
