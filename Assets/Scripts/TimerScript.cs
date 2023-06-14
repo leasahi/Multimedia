@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-     float TimeLeft = 1080;//1080;
+     float TimeLeft = 1080;
     public bool TimerOn = false;
     public LogicScript logic;
     public GameObject Timer;
@@ -27,7 +27,10 @@ public class TimerScript : MonoBehaviour
         //if (logic.gameOverScreen.activeSelf)
         //{Timer.SetActive(false);}
 
-        if (TimerOn && !logic.startGameScreen.activeSelf)
+        if (TimerOn 
+			&& !logic.startGameScreen.activeSelf
+			&& !logic.explanationScreen1.activeSelf 
+			&& !logic.explanationScreen2.activeSelf)
         {
             if (TimeLeft > 0 && TimeLeft < 1200)
             {

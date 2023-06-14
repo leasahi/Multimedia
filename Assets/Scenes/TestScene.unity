@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18110669, g: 0.22668694, b: 0.30730566, a: 1}
+  m_IndirectSpecularColor: {r: 0.18110703, g: 0.22668733, b: 0.30730638, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -481,7 +481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &20028377
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1372,6 +1372,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &90935292
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2779,6 +2781,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &173539322
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3514,6 +3518,7 @@ MonoBehaviour:
   inGameUi: {fileID: 1096700853}
   explanationScreen1: {fileID: 126291257}
   explanationScreen2: {fileID: 490795113}
+  zText: {fileID: 429033664}
   Timer: {fileID: 251546197}
   pauseIcon: {fileID: 1118902281}
   player1: {fileID: 986370317}
@@ -5257,6 +5262,7 @@ RectTransform:
   - {fileID: 1118902282}
   - {fileID: 1467173456}
   - {fileID: 567464104}
+  - {fileID: 429033665}
   - {fileID: 1608309910}
   - {fileID: 461596892}
   m_Father: {fileID: 0}
@@ -5981,6 +5987,43 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -645962021628002114, guid: ee16cdd53c7014082b21bfc780efb3c0, type: 3}
+--- !u!1 &429033664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429033665}
+  m_Layer: 5
+  m_Name: Z Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &429033665
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429033664}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1344543481}
+  m_Father: {fileID: 361091786}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2504.6616, y: 1878.4962}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &431103977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -777755487046566169, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
@@ -6900,7 +6943,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 361091786}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26755,7 +26798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee6b3501fff5c45b2b31dee348a5be89, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ee6b3501fff5c45b2b31dee348a5be89, type: 3}
       propertyPath: m_LocalScale.x
@@ -27450,6 +27493,86 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -158856128387872069, guid: 5422f2f9b6b754ad28629e48efb6da80, type: 3}
+--- !u!1 &1344543480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1344543481}
+  - component: {fileID: 1344543483}
+  - component: {fileID: 1344543482}
+  m_Layer: 5
+  m_Name: Text (Legacy) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1344543481
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344543480}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 429033665}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -2504.6616, y: -2978.496}
+  m_SizeDelta: {x: 2000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1344543482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344543480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 100
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Press Z to skip '
+--- !u!222 &1344543483
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344543480}
+  m_CullTransparentMesh: 1
 --- !u!1 &1349063787
 GameObject:
   m_ObjectHideFlags: 0
@@ -36124,7 +36247,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 361091786}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37178,6 +37301,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &1651824290
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -42938,6 +43063,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &1976223310
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -47040,7 +47167,7 @@ Transform:
   - {fileID: 1867281472}
   - {fileID: 422445182}
   m_Father: {fileID: 1577837576}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543450652512857154
 Transform:
@@ -53463,6 +53590,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &3755974043173854996
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -53588,6 +53717,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &3756497675373064520
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -54439,6 +54570,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 0}
+  friend2: {fileID: 0}
 --- !u!136 &4132371546481140168
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -54842,6 +54975,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &4288405936586614858
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58050,6 +58185,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &5797090937017731789
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58438,6 +58575,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &5928341570234464955
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -59280,6 +59419,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &6185237967793097663
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -59506,6 +59647,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &6279592991573452248
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60019,6 +60162,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &6449062241171710477
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -60299,6 +60444,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &6523120926934218734
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -61288,6 +61435,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &6997339527546471011
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -61724,6 +61873,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &7111103180349207554
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -62188,6 +62339,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &7219891746668596581
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -62882,6 +63035,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &7616010628676468268
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -64040,6 +64195,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8056509588249973729
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -65060,6 +65217,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8459729338362939917
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -65324,6 +65483,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8566521780095263944
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -66729,6 +66890,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8860709213711671923
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -66876,6 +67039,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8890754228180402294
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -67108,6 +67273,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8935094001922161937
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -67332,6 +67499,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8955926878618505412
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -67430,6 +67599,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &8962604699181631462
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -67777,6 +67948,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &9051218993750058672
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -68019,6 +68192,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &9099763631322248917
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -68206,6 +68381,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &9121778923504011842
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -68414,6 +68591,8 @@ MonoBehaviour:
   invited2: 0
   isCollided1: 0
   isCollided2: 0
+  friend1: {fileID: 2004150780}
+  friend2: {fileID: 1159009623}
 --- !u!136 &9175119680161557428
 CapsuleCollider:
   m_ObjectHideFlags: 0

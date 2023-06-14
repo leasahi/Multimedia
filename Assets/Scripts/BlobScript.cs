@@ -8,11 +8,10 @@ public class BlobScript : MonoBehaviour
     public bool collided = false;
     public bool invited1 = false;
     public bool invited2 = false;
-
-
-
     public bool isCollided1 = false;
     public bool isCollided2 = false;
+    public FriendCountScript friend1;
+    public FriendCountScript friend2;
 
 
     // Start is called before the first frame update
@@ -24,10 +23,10 @@ public class BlobScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!invited1 && isCollided1 && Input.GetKey(KeyCode.X))
+        if (!invited1 && isCollided1 && Input.GetKey(KeyCode.X) && !friend1.p1HasBlob)
         {
             invited1 = true;
-        } else if (!invited2 && isCollided2 && Input.GetKey(KeyCode.L))
+        } else if (!invited2 && isCollided2 && Input.GetKey(KeyCode.L) && !friend2.p2HasBlob)
         {
             invited2 = true;
 

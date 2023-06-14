@@ -19,6 +19,7 @@ public class LogicScript : MonoBehaviour
     public GameObject inGameUi;
     public GameObject explanationScreen1;
     public GameObject explanationScreen2;
+    public GameObject zText;
     public GameObject Timer;
     public GameObject pauseIcon;
     public GameObject player1; //main camera of player 1
@@ -234,6 +235,8 @@ public class LogicScript : MonoBehaviour
 
     private void showVideos(bool penguin)
     {
+        zText.SetActive(true);
+
         if (penguin)
         {
             videoPenguinWins.SetActive(true);

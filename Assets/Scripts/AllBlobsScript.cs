@@ -38,14 +38,14 @@ public class AllBlobsScript : MonoBehaviour
 
         //int randomBlob = Random.Range(0, allBlobs.Length);
         int randomPosition = Random.Range(0, 9);
-        int randomBlobNew = Random.Range(1, allBlobsNew.Count-1);
+        int randomBlobNew = Random.Range(0, allBlobsNew.Count-1);
         int randomPosition2 = Random.Range(10, 20);
-        int randomBlobNew2 = Random.Range(1, allBlobsNew.Count - 1);
+        int randomBlobNew2 = Random.Range(0, allBlobsNew.Count - 1);
         int randomPosition3 = Random.Range(20, positions.Length - 1);
-        int randomBlobNew3 = Random.Range(1, allBlobsNew.Count - 1);
+        int randomBlobNew3 = Random.Range(0, allBlobsNew.Count - 1);
 
         //Testblob: später löschen, auch oben aus 1 eine 0 machen!
-        NewBlob(0, new Vector3(-16.6100006f, 0, -4.30999994f));
+        //NewBlob(0, new Vector3(-16.6100006f, 0, -4.30999994f));
 
         NewBlob(randomBlobNew, positions[randomPosition]);
         NewBlob(randomBlobNew2, positions[randomPosition2]);
