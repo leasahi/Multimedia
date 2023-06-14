@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TimerScript : MonoBehaviour
 {
-     float TimeLeft = 1100;//1080;
+     float TimeLeft = 1190;//1080;
     public bool TimerOn = false;
     public LogicScript logic;
     public GameObject Timer;

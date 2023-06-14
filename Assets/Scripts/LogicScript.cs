@@ -192,15 +192,10 @@ public class LogicScript : MonoBehaviour
                 wait = 0;
                 videoPenguinWins.SetActive(true);
             }*/
-        } else if(Random.Range(0, 2) == 1)
-        {
-            gameOverScreenNobodyWins.SetActive(true);
-            videoPenguinWins.SetActive(false);
-            videoPandaWins.SetActive(true);
         } else {
             gameOverScreenNobodyWins.SetActive(true);
+            videoPenguinWins.SetActive(false);
             videoPandaWins.SetActive(false);
-            videoPenguinWins.SetActive(true);
         }
 
         Timer.SetActive(false);
