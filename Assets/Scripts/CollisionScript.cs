@@ -81,6 +81,7 @@ public class CollisionScript : MonoBehaviour
                 this.transform.SetParent(null);
                 this.transform.SetParent(player1.transform);
 				friend1.p1HasBlob = true;
+                friend2.p2HasBlob = false;
                 //this.transform.position = player1.transform.position + offset1;
                 this.transform.position = player1.transform.position;
                 this.transform.position -= player1.transform.forward * distance;
@@ -122,6 +123,7 @@ public class CollisionScript : MonoBehaviour
                 this.transform.SetParent(null);
                 this.transform.SetParent(player2.transform);
 				friend2.p2HasBlob = true;
+                friend1.p1HasBlob = false;
                 //this.transform.position = player2.transform.position + offset2;
                 this.transform.position = player2.transform.position;
                 this.transform.position -= player2.transform.forward * distance;
