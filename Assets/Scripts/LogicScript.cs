@@ -30,21 +30,23 @@ public class LogicScript : MonoBehaviour
     public bool pandaWins = false;
     public bool penguinWins = false;
 
-    public FriendCountScript friendsCounter;
+    public FriendCountScript friendsCounter1;
+    public FriendCountScript friendsCounter2;
+
 
     private void Update()
     {
-        if (friendsCounter.friends1 > friendsCounter.friends2)
+        if (friendsCounter1.friends1 > friendsCounter2.friends2)
         {
             pandaWins = false;
             penguinWins = true;
         }
-        if (friendsCounter.friends1 < friendsCounter.friends2)
+        if (friendsCounter1.friends1 < friendsCounter2.friends2)
         {
             penguinWins = false;
             pandaWins = true;
         }
-        if (friendsCounter.friends1 == friendsCounter.friends2)
+        if (friendsCounter1.friends1 == friendsCounter2.friends2)
         {
             penguinWins = false;
             pandaWins = false;
@@ -174,22 +176,22 @@ public class LogicScript : MonoBehaviour
         if (pandaWins)
         {
             gameOverScreenPandaWins.SetActive(true);
-            StartCoroutine(Wait());
-            if(wait == 1)
+            StartCoroutine(Wait(false));
+            /*if(wait == 1)
             {
                 wait = 0;
                 videoPandaWins.SetActive(true);
-            }
+            }*/
         }
         else if(penguinWins)
         {
             gameOverScreenPenguinWins.SetActive(true);
-            StartCoroutine(Wait());
-            if (wait == 1)
+            StartCoroutine(Wait(true));
+            /*if (wait == 1)
             {
                 wait = 0;
                 videoPenguinWins.SetActive(true);
-            }
+            }*/
         } else if(Random.Range(0, 2) == 1)
         {
             gameOverScreenNobodyWins.SetActive(true);
@@ -224,9 +226,24 @@ public class LogicScript : MonoBehaviour
         startGameScreen.SetActive(true);
     }
 
-    private IEnumerator Wait()
+    private IEnumerator Wait(bool penguin)
     {
         yield return new WaitForSecondsRealtime(5f);
-        wait = 1;
+        this.showVideos(penguin);
+        Debug.Log("inwaiter");
+
+        //wait = 1;
+    }
+
+    private void showVideos(bool penguin)
+    {
+        if (penguin)
+        {
+            videoPenguinWins.SetActive(true);
+        }
+        else
+        {
+            videoPandaWins.SetActive(true);
+        }  
     }
 }
