@@ -226,7 +226,7 @@ public class LogicScript : MonoBehaviour
 
     private IEnumerator Wait()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSecondsRealtime(5f);
         wait = 1;
     }
 }
