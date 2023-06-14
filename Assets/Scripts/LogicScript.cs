@@ -7,12 +7,13 @@ using UnityEngine.SceneManagement;
 public class LogicScript : MonoBehaviour
 {
     public int friendCounter;
+    public int wait = 0;
     public Text scoreText;
     public GameObject gameOverScreenPandaWins;
     public GameObject gameOverScreenPenguinWins;
     public GameObject gameOverScreenNobodyWins;
-    public GameObject videoPlayerPandaWins;
-    public GameObject videoPlayerPenguinWins;
+    public GameObject videoPandaWins;
+    public GameObject videoPenguinWins;
 
     public GameObject startGameScreen;
     public GameObject inGameUi;
@@ -144,6 +145,8 @@ public class LogicScript : MonoBehaviour
         gameOverScreenPandaWins.SetActive(false);
         gameOverScreenPenguinWins.SetActive(false);
         gameOverScreenNobodyWins.SetActive(false);
+        videoPenguinWins.SetActive(false);
+        videoPandaWins.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         startGameScreen.SetActive(false);
     }
@@ -166,19 +169,31 @@ public class LogicScript : MonoBehaviour
         if (pandaWins)
         {
             gameOverScreenPandaWins.SetActive(true);
+            StartCoroutine(Wait());
+            if(wait == 1)
+            {
+                wait = 0;
+                videoPandaWins.SetActive(true);
+            }
         }
         else if(penguinWins)
         {
             gameOverScreenPenguinWins.SetActive(true);
+            StartCoroutine(Wait());
+            if (wait == 1)
+            {
+                wait = 0;
+                videoPenguinWins.SetActive(true);
+            }
         } else if(Random.Range(0, 2) == 1)
         {
             gameOverScreenNobodyWins.SetActive(true);
-            videoPlayerPenguinWins.SetActive(false);
-            videoPlayerPandaWins.SetActive(true);
+            videoPenguinWins.SetActive(false);
+            videoPandaWins.SetActive(true);
         } else {
             gameOverScreenNobodyWins.SetActive(true);
-            videoPlayerPandaWins.SetActive(false);
-            videoPlayerPenguinWins.SetActive(true);
+            videoPandaWins.SetActive(false);
+            videoPenguinWins.SetActive(true);
         }
 
         Timer.SetActive(false);
@@ -202,5 +217,11 @@ public class LogicScript : MonoBehaviour
         explanationScreen1.SetActive(false);
         explanationScreen2.SetActive(false);
         startGameScreen.SetActive(true);
+    }
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(5f);
+        wait = 1;
     }
 }
