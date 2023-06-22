@@ -216,4 +216,17 @@ public class CollisionScript : MonoBehaviour
             Debug.Log("State: " + touchedWater);
         }
     }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Player1"))
+        {
+            isCollided1 = false;
+        }
+
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            isCollided2 = false;
+        }
+    }
 }
